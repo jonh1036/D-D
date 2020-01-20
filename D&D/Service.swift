@@ -37,14 +37,17 @@ struct Service<T: Decodable> {
     }
 }
 
-
 enum Router {
-    case classes
+    case classes //
     case conditions
     case damageTypes
     case equipment
     case monsters
-    case races
+    case races //
+    case skills //
+    case abilityScores //
+    case subclasses //
+    case subraces //
     
     static var baseUrl = "https://www.dnd5eapi.co/api/"
     
@@ -62,6 +65,15 @@ enum Router {
             return  "\(Router.baseUrl)monsters"
         case .races:
             return "\(Router.baseUrl)races"
+        case .skills:
+            return "\(Router.baseUrl)skills"
+        case .abilityScores:
+            return "\(Router.baseUrl)ability-scores"
+        case .subclasses:
+            return "\(Router.baseUrl)subclasses"
+        case .subraces:
+            return "\(Router.baseUrl)subraces"
         }
+
     }
 }
