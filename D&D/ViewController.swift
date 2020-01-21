@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let navBar: UINavigationController = {
+       let navBar = UINavigationController()
+        
+        return navBar
+    }()
+    
     let tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -25,8 +31,7 @@ class ViewController: UIViewController {
         setupTableView()
         self.view.backgroundColor = .red
         
-        
-        Service<Classes>().get(withRoute: .monsters) { (classes, error) in
+        Service<Classes>().get(withRoute: .skills) { (classes, error) in
             self.monsters = classes?.results
             DispatchQueue.main.async {
                 self.tableView.reloadData()
