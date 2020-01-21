@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19045EEF23D777890072E2B7 /* SpecificRace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19045EEE23D777890072E2B7 /* SpecificRace.swift */; };
+		19045EF123D78CCE0072E2B7 /* SpecificEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19045EF023D78CCE0072E2B7 /* SpecificEquipment.swift */; };
+		19045EF323D7910F0072E2B7 /* SpecificSpell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19045EF223D7910F0072E2B7 /* SpecificSpell.swift */; };
 		195E13D223D627BC0070B5AB /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13D123D627BC0070B5AB /* Class.swift */; };
 		195E13D423D628E40070B5AB /* Races.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13D323D628E40070B5AB /* Races.swift */; };
 		195E13D623D629A30070B5AB /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13D523D629A30070B5AB /* Skills.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19045EEE23D777890072E2B7 /* SpecificRace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificRace.swift; sourceTree = "<group>"; };
+		19045EF023D78CCE0072E2B7 /* SpecificEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificEquipment.swift; sourceTree = "<group>"; };
+		19045EF223D7910F0072E2B7 /* SpecificSpell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificSpell.swift; sourceTree = "<group>"; };
 		195E13D123D627BC0070B5AB /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		195E13D323D628E40070B5AB /* Races.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Races.swift; sourceTree = "<group>"; };
 		195E13D523D629A30070B5AB /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
@@ -87,6 +93,9 @@
 				195E13D923D62AC00070B5AB /* StartingProficiencies.swift */,
 				195E13DB23D647F40070B5AB /* RootStruct.swift */,
 				195E13DD23D648C50070B5AB /* APIClasses.swift */,
+				19045EEE23D777890072E2B7 /* SpecificRace.swift */,
+				19045EF023D78CCE0072E2B7 /* SpecificEquipment.swift */,
+				19045EF223D7910F0072E2B7 /* SpecificSpell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,6 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				195E13D823D62A000070B5AB /* AbilityBonuses.swift in Sources */,
+				19045EEF23D777890072E2B7 /* SpecificRace.swift in Sources */,
+				19045EF123D78CCE0072E2B7 /* SpecificEquipment.swift in Sources */,
 				195E13D423D628E40070B5AB /* Races.swift in Sources */,
 				195E13D623D629A30070B5AB /* Skills.swift in Sources */,
 				195E13DE23D648C50070B5AB /* APIClasses.swift in Sources */,
@@ -247,6 +258,7 @@
 				195E13DC23D647F40070B5AB /* RootStruct.swift in Sources */,
 				797F3B5F23D4FE6600AF5FD7 /* Models.swift in Sources */,
 				195E13DA23D62AC10070B5AB /* StartingProficiencies.swift in Sources */,
+				19045EF323D7910F0072E2B7 /* SpecificSpell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

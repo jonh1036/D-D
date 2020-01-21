@@ -10,16 +10,33 @@ import UIKit
 import Foundation
 
 class ViewController: UIViewController {
-    private var classes: [RootStruct] = []
+    var classes: [RootStruct] = []
+    var races: [RootStruct] = []
+    var equipments: [RootStruct] = []
+    var spells: [RootStruct] = []
+    var categories: [RootStruct] = []
+    var race: SpecificRace?
+    var classe: Class?
+    var equipment: SpecificEquipment?
+    var spell: SpecificSpell?
     
     override func viewDidLoad() {
-        loadClasses()
-        print(classes)
+        super.viewDidLoad()
+        loadGeneric(path: "http://www.dnd5eapi.co/api/spells/blade-barrier", type: spell) { jsonStructs in
+            if let jsonStructs = jsonStructs {
+                self.spell = jsonStructs
+                print(self.spell)
+            } else {
+                print("Error")
+                self.spell = nil
+            }
+        }
     }
-    
-    func loadClasses() {
-        guard let url = URL(string: "http://www.dnd5eapi.co/api/classes") else { return }
+
+    func loadGeneric<T: Decodable>(path: String, type: T, completionHandler: @escaping (T?) -> Void) {
+        guard let url = URL(string: path) else { return }
         let request = URLRequest(url: url)
+        
         URLSession.shared.dataTask(with: request){ data, response, error in
             if let e = error {
                 print(e.localizedDescription)
@@ -27,12 +44,40 @@ class ViewController: UIViewController {
             }
             
             if let data = data, let response = response {
+                
+                guard let json = try? JSONDecoder().decode(T.self ,from: data) else {
+                    print("Not json")
+                    return
+                }
+                
+                completionHandler(json)
+                
+            } else {
+                print("Error")
+                return
+            }
+        }.resume()
+    }
+    
+    func load(path: String, completionHandler: @escaping ([RootStruct]?) -> Void) {
+        guard let url = URL(string: path) else { return }
+        let request = URLRequest(url: url)
+        
+        URLSession.shared.dataTask(with: request){ data, response, error in
+            if let e = error {
+                print(e.localizedDescription)
+                return
+            }
+            
+            if let data = data, let response = response {
+                
                 guard let json = try? JSONDecoder().decode(APIClasses.self ,from: data) else {
                     print("Not json")
                     return
                 }
                 
-                self.classes = json.results
+                completionHandler(json.results)
+                
             } else {
                 print("Error")
                 return
