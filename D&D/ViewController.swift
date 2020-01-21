@@ -7,8 +7,41 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
+    private var classes: [RootStruct] = []
+    
+    override func viewDidLoad() {
+        loadClasses()
+        print(classes)
+    }
+    
+    func loadClasses() {
+        guard let url = URL(string: "http://www.dnd5eapi.co/api/classes") else { return }
+        let request = URLRequest(url: url)
+        URLSession.shared.dataTask(with: request){ data, response, error in
+            if let e = error {
+                print(e.localizedDescription)
+                return
+            }
+            
+            if let data = data, let response = response {
+                guard let json = try? JSONDecoder().decode(APIClasses.self ,from: data) else {
+                    print("Not json")
+                    return
+                }
+                
+                self.classes = json.results
+            } else {
+                print("Error")
+                return
+            }
+        }.resume()
+    }
+}
+
+/*class ViewController: UIViewController {
     
     let tableView: UITableView = {
         let tableView = UITableView()
@@ -62,4 +95,4 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = monster.name
         return cell
     }
-}
+}*/

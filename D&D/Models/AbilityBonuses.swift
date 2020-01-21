@@ -1,9 +1,7 @@
-//
-//  AbilityBonuses.swift
-//  D&D
-//
-//  Created by Artur de Castro Rocha Sampaio on 20/01/20.
-//  Copyright © 2020 Vinicius Mangueira. All rights reserved.
-//
-
 import Foundation
+
+struct AbilityBonuses: Decodable {
+    let name: String
+    let url: String
+    let bonus: Int
+}
