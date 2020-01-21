@@ -12,7 +12,7 @@ class CriarPersonagemViewController: UIViewController {
 
     @IBOutlet weak var tableVIew: UITableView!
     
-    let atributos: [String] = ["raça", "classe", "antecedente", "tendência"]
+    let atributos: [String] = ["Raça", "Classe", "Antecedente", "Tendência"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

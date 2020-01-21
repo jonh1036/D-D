@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		195E13D223D627BC0070B5AB /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13D123D627BC0070B5AB /* Class.swift */; };
-		195E13D423D628E40070B5AB /* Races.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13D323D628E40070B5AB /* Races.swift */; };
-		195E13D623D629A30070B5AB /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13D523D629A30070B5AB /* Skills.swift */; };
-		195E13D823D62A000070B5AB /* AbilityBonuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13D723D62A000070B5AB /* AbilityBonuses.swift */; };
-		195E13DA23D62AC10070B5AB /* StartingProficiencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13D923D62AC00070B5AB /* StartingProficiencies.swift */; };
-		195E13DC23D647F40070B5AB /* RootStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13DB23D647F40070B5AB /* RootStruct.swift */; };
-		195E13DE23D648C50070B5AB /* APIClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13DD23D648C50070B5AB /* APIClasses.swift */; };
+		6502CBFB23D7712200A18E9B /* PersonagemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502CBFA23D7712200A18E9B /* PersonagemTableViewCell.swift */; };
+		6502CBFE23D77C2500A18E9B /* AtributoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502CBFD23D77C2500A18E9B /* AtributoTableViewCell.swift */; };
+		65EA9C3323D757B300BEC6F0 /* ListaPersonagensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3223D757B300BEC6F0 /* ListaPersonagensViewController.swift */; };
+		65EA9C3723D7586400BEC6F0 /* CriarPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3623D7586400BEC6F0 /* CriarPersonagemViewController.swift */; };
+		65EA9C3923D7588800BEC6F0 /* StatusPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3823D7588800BEC6F0 /* StatusPersonagemViewController.swift */; };
+		65EA9C3B23D7589F00BEC6F0 /* SkillsPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3A23D7589F00BEC6F0 /* SkillsPersonagemViewController.swift */; };
+		65EA9C3D23D758BD00BEC6F0 /* EquipamentoPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3C23D758BD00BEC6F0 /* EquipamentoPersonagemViewController.swift */; };
+		65EA9C3F23D75A8E00BEC6F0 /* PersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3E23D75A8E00BEC6F0 /* PersonagemViewController.swift */; };
 		797F3B3B23D4FE3500AF5FD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797F3B3A23D4FE3500AF5FD7 /* AppDelegate.swift */; };
 		797F3B3D23D4FE3500AF5FD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797F3B3C23D4FE3500AF5FD7 /* SceneDelegate.swift */; };
 		797F3B3F23D4FE3500AF5FD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797F3B3E23D4FE3500AF5FD7 /* ViewController.swift */; };
@@ -36,13 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		195E13D123D627BC0070B5AB /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
-		195E13D323D628E40070B5AB /* Races.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Races.swift; sourceTree = "<group>"; };
-		195E13D523D629A30070B5AB /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
-		195E13D723D62A000070B5AB /* AbilityBonuses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityBonuses.swift; sourceTree = "<group>"; };
-		195E13D923D62AC00070B5AB /* StartingProficiencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingProficiencies.swift; sourceTree = "<group>"; };
-		195E13DB23D647F40070B5AB /* RootStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootStruct.swift; sourceTree = "<group>"; };
-		195E13DD23D648C50070B5AB /* APIClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClasses.swift; sourceTree = "<group>"; };
+		6502CBFA23D7712200A18E9B /* PersonagemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagemTableViewCell.swift; sourceTree = "<group>"; };
+		6502CBFD23D77C2500A18E9B /* AtributoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtributoTableViewCell.swift; sourceTree = "<group>"; };
+		65EA9C3223D757B300BEC6F0 /* ListaPersonagensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPersonagensViewController.swift; sourceTree = "<group>"; };
+		65EA9C3623D7586400BEC6F0 /* CriarPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarPersonagemViewController.swift; sourceTree = "<group>"; };
+		65EA9C3823D7588800BEC6F0 /* StatusPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPersonagemViewController.swift; sourceTree = "<group>"; };
+		65EA9C3A23D7589F00BEC6F0 /* SkillsPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsPersonagemViewController.swift; sourceTree = "<group>"; };
+		65EA9C3C23D758BD00BEC6F0 /* EquipamentoPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipamentoPersonagemViewController.swift; sourceTree = "<group>"; };
+		65EA9C3E23D75A8E00BEC6F0 /* PersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagemViewController.swift; sourceTree = "<group>"; };
 		797F3B3723D4FE3500AF5FD7 /* D&D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D&D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		797F3B3A23D4FE3500AF5FD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		797F3B3C23D4FE3500AF5FD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,19 +78,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		195E13CC23D623730070B5AB /* Models */ = {
+		6502CBFC23D7712900A18E9B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				797F3B5E23D4FE6600AF5FD7 /* Models.swift */,
-				195E13D123D627BC0070B5AB /* Class.swift */,
-				195E13D323D628E40070B5AB /* Races.swift */,
-				195E13D523D629A30070B5AB /* Skills.swift */,
-				195E13D723D62A000070B5AB /* AbilityBonuses.swift */,
-				195E13D923D62AC00070B5AB /* StartingProficiencies.swift */,
-				195E13DB23D647F40070B5AB /* RootStruct.swift */,
-				195E13DD23D648C50070B5AB /* APIClasses.swift */,
+				797F3B4323D4FE3B00AF5FD7 /* Assets.xcassets */,
+				797F3B4023D4FE3500AF5FD7 /* Main.storyboard */,
+				797F3B4523D4FE3B00AF5FD7 /* LaunchScreen.storyboard */,
 			);
-			path = Models;
+			path = View;
+			sourceTree = "<group>";
+		};
+		65EA9C3123D7578A00BEC6F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65EA9C3223D757B300BEC6F0 /* ListaPersonagensViewController.swift */,
+				65EA9C3623D7586400BEC6F0 /* CriarPersonagemViewController.swift */,
+				65EA9C3823D7588800BEC6F0 /* StatusPersonagemViewController.swift */,
+				65EA9C3A23D7589F00BEC6F0 /* SkillsPersonagemViewController.swift */,
+				65EA9C3C23D758BD00BEC6F0 /* EquipamentoPersonagemViewController.swift */,
+				65EA9C3E23D75A8E00BEC6F0 /* PersonagemViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		797F3B2E23D4FE3500AF5FD7 = {
@@ -112,15 +122,16 @@
 		797F3B3923D4FE3500AF5FD7 /* D&D */ = {
 			isa = PBXGroup;
 			children = (
-				195E13CC23D623730070B5AB /* Models */,
+				65EA9C3123D7578A00BEC6F0 /* Controller */,
 				797F3B3A23D4FE3500AF5FD7 /* AppDelegate.swift */,
 				797F3B3C23D4FE3500AF5FD7 /* SceneDelegate.swift */,
 				797F3B3E23D4FE3500AF5FD7 /* ViewController.swift */,
-				797F3B4023D4FE3500AF5FD7 /* Main.storyboard */,
-				797F3B4323D4FE3B00AF5FD7 /* Assets.xcassets */,
-				797F3B4523D4FE3B00AF5FD7 /* LaunchScreen.storyboard */,
+				6502CBFD23D77C2500A18E9B /* AtributoTableViewCell.swift */,
+				6502CBFA23D7712200A18E9B /* PersonagemTableViewCell.swift */,
+				6502CBFC23D7712900A18E9B /* View */,
 				797F3B4823D4FE3B00AF5FD7 /* Info.plist */,
 				797F3B5C23D4FE5A00AF5FD7 /* Service.swift */,
+				797F3B5E23D4FE6600AF5FD7 /* Models.swift */,
 			);
 			path = "D&D";
 			sourceTree = "<group>";
@@ -235,18 +246,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				195E13D823D62A000070B5AB /* AbilityBonuses.swift in Sources */,
-				195E13D423D628E40070B5AB /* Races.swift in Sources */,
-				195E13D623D629A30070B5AB /* Skills.swift in Sources */,
-				195E13DE23D648C50070B5AB /* APIClasses.swift in Sources */,
-				195E13D223D627BC0070B5AB /* Class.swift in Sources */,
 				797F3B3F23D4FE3500AF5FD7 /* ViewController.swift in Sources */,
 				797F3B5D23D4FE5A00AF5FD7 /* Service.swift in Sources */,
+				65EA9C3323D757B300BEC6F0 /* ListaPersonagensViewController.swift in Sources */,
+				65EA9C3923D7588800BEC6F0 /* StatusPersonagemViewController.swift in Sources */,
+				6502CBFB23D7712200A18E9B /* PersonagemTableViewCell.swift in Sources */,
+				65EA9C3D23D758BD00BEC6F0 /* EquipamentoPersonagemViewController.swift in Sources */,
+				65EA9C3F23D75A8E00BEC6F0 /* PersonagemViewController.swift in Sources */,
 				797F3B3B23D4FE3500AF5FD7 /* AppDelegate.swift in Sources */,
 				797F3B3D23D4FE3500AF5FD7 /* SceneDelegate.swift in Sources */,
-				195E13DC23D647F40070B5AB /* RootStruct.swift in Sources */,
+				6502CBFE23D77C2500A18E9B /* AtributoTableViewCell.swift in Sources */,
+				65EA9C3B23D7589F00BEC6F0 /* SkillsPersonagemViewController.swift in Sources */,
 				797F3B5F23D4FE6600AF5FD7 /* Models.swift in Sources */,
-				195E13DA23D62AC10070B5AB /* StartingProficiencies.swift in Sources */,
+				65EA9C3723D7586400BEC6F0 /* CriarPersonagemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6FYGZ29HL;
 				INFOPLIST_FILE = "D&D/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -427,6 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6FYGZ29HL;
 				INFOPLIST_FILE = "D&D/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

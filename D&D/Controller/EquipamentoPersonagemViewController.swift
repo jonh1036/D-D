@@ -10,6 +10,8 @@ import UIKit
 
 class EquipamentoPersonagemViewController: UIViewController {
 
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
