@@ -47,6 +47,8 @@ class ListaPersonagensViewController: UIViewController, UITableViewDelegate, UIT
         
         return cell
     }
-
-
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
 }

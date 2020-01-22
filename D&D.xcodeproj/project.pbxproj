@@ -14,6 +14,7 @@
 		6543261423D887E9009F2BF2 /* EquipamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543261323D887E9009F2BF2 /* EquipamentoTableViewCell.swift */; };
 		6543261623D889B5009F2BF2 /* MagiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543261523D889B5009F2BF2 /* MagiaTableViewCell.swift */; };
 		6543261823D889E6009F2BF2 /* MagiaPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543261723D889E6009F2BF2 /* MagiaPersonagemViewController.swift */; };
+		65465F6623D8D0A5008AC16C /* SelectAttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65465F6523D8D0A5008AC16C /* SelectAttributeViewController.swift */; };
 		65EA9C3323D757B300BEC6F0 /* ListaPersonagensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3223D757B300BEC6F0 /* ListaPersonagensViewController.swift */; };
 		65EA9C3723D7586400BEC6F0 /* CriarPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3623D7586400BEC6F0 /* CriarPersonagemViewController.swift */; };
 		65EA9C3923D7588800BEC6F0 /* StatusPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3823D7588800BEC6F0 /* StatusPersonagemViewController.swift */; };
@@ -48,6 +49,7 @@
 		6543261323D887E9009F2BF2 /* EquipamentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipamentoTableViewCell.swift; sourceTree = "<group>"; };
 		6543261523D889B5009F2BF2 /* MagiaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiaTableViewCell.swift; sourceTree = "<group>"; };
 		6543261723D889E6009F2BF2 /* MagiaPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiaPersonagemViewController.swift; sourceTree = "<group>"; };
+		65465F6523D8D0A5008AC16C /* SelectAttributeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAttributeViewController.swift; sourceTree = "<group>"; };
 		65EA9C3223D757B300BEC6F0 /* ListaPersonagensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPersonagensViewController.swift; sourceTree = "<group>"; };
 		65EA9C3623D7586400BEC6F0 /* CriarPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarPersonagemViewController.swift; sourceTree = "<group>"; };
 		65EA9C3823D7588800BEC6F0 /* StatusPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPersonagemViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				65EA9C3C23D758BD00BEC6F0 /* EquipamentoPersonagemViewController.swift */,
 				6543261723D889E6009F2BF2 /* MagiaPersonagemViewController.swift */,
 				65EA9C3E23D75A8E00BEC6F0 /* PersonagemViewController.swift */,
+				65465F6523D8D0A5008AC16C /* SelectAttributeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				6543261423D887E9009F2BF2 /* EquipamentoTableViewCell.swift in Sources */,
 				6543261823D889E6009F2BF2 /* MagiaPersonagemViewController.swift in Sources */,
 				65EA9C3923D7588800BEC6F0 /* StatusPersonagemViewController.swift in Sources */,
+				65465F6623D8D0A5008AC16C /* SelectAttributeViewController.swift in Sources */,
 				6502CBFB23D7712200A18E9B /* PersonagemTableViewCell.swift in Sources */,
 				65EA9C3D23D758BD00BEC6F0 /* EquipamentoPersonagemViewController.swift in Sources */,
 				65EA9C3F23D75A8E00BEC6F0 /* PersonagemViewController.swift in Sources */,
