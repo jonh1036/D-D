@@ -1,17 +1,17 @@
 //
-//  AtributoTableViewCell.swift
+//  PericiaTableViewCell.swift
 //  D&D
 //
-//  Created by Jonathan de Pinho Silva on 21/01/20.
-//  Copyright © 2020 Jonathan de Pinho Silva. All rights reserved.
+//  Created by Jonathan de Pinho Silva on 22/01/20.
+//  Copyright © 2020 Vinicius Mangueira. All rights reserved.
 //
 
 import UIKit
 
-class AtributoTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var atributoLabel: UILabel!
-    @IBOutlet weak var valorTextField: UITextField!
+class PericiaTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var periciaLabel: UILabel!
+    @IBOutlet weak var periciaTextField: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()

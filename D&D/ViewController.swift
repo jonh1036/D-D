@@ -67,4 +67,5 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = monster.name
         return cell
     }
+    
 }

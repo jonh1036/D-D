@@ -10,23 +10,38 @@ import UIKit
 
 class EquipamentoPersonagemViewController: UIViewController {
 
-    @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var equipamentoTableView: UITableView!
     
+    let equipamentos: [String] = ["Equipamento 1", "Equipamento 2", "Equipamento 3", "Equipamento 4"]
+            
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+                
+        self.equipamentoTableView.delegate = self
+        self.equipamentoTableView.dataSource = self
     }
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+
+extension EquipamentoPersonagemViewController: UITableViewDelegate, UITableViewDataSource {
+            
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return equipamentos.count
     }
-    */
-
+            
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+                
+        let cell = tableView.dequeueReusableCell(withIdentifier: "equipamentoCell") as! EquipamentoTableViewCell
+                
+        cell.equipamentoLabel.text = equipamentos[indexPath.row]
+                
+        return cell
+                
+    }
+            
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
+            
 }

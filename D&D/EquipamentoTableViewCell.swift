@@ -1,17 +1,17 @@
 //
-//  AtributoTableViewCell.swift
+//  EquipamentoTableViewCell.swift
 //  D&D
 //
-//  Created by Jonathan de Pinho Silva on 21/01/20.
-//  Copyright © 2020 Jonathan de Pinho Silva. All rights reserved.
+//  Created by Jonathan de Pinho Silva on 22/01/20.
+//  Copyright © 2020 Vinicius Mangueira. All rights reserved.
 //
 
 import UIKit
 
-class AtributoTableViewCell: UITableViewCell {
+class EquipamentoTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var atributoLabel: UILabel!
-    @IBOutlet weak var valorTextField: UITextField!
+    @IBOutlet weak var equipamentoLabel: UILabel!
+    @IBOutlet weak var equipamentoTextField: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()

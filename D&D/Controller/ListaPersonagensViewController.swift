@@ -3,7 +3,7 @@
 //  D&D
 //
 //  Created by Jonathan de Pinho Silva on 21/01/20.
-//  Copyright © 2020 Vinicius Mangueira. All rights reserved.
+//  Copyright © 2020 Jonathan de Pinho Silva. All rights reserved.
 //
 
 import UIKit

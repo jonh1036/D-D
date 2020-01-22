@@ -1,17 +1,17 @@
 //
-//  AtributoTableViewCell.swift
+//  MagiaTableViewCell.swift
 //  D&D
 //
-//  Created by Jonathan de Pinho Silva on 21/01/20.
-//  Copyright © 2020 Jonathan de Pinho Silva. All rights reserved.
+//  Created by Jonathan de Pinho Silva on 22/01/20.
+//  Copyright © 2020 Vinicius Mangueira. All rights reserved.
 //
 
 import UIKit
 
-class AtributoTableViewCell: UITableViewCell {
+class MagiaTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var atributoLabel: UILabel!
-    @IBOutlet weak var valorTextField: UITextField!
+    @IBOutlet weak var magiaLabel: UILabel!
+    @IBOutlet weak var magiaTextField: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()
