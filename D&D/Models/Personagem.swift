@@ -1,5 +1,6 @@
+//MARK: - Caracteristicas gerais
+
 class Personagem{
-    //MARK: - Caracteristicas geriasi
     var nome:String = ""
     var alinhamento: Alinhamento = .caoticoBom
     var classe: Classe = .paladino
