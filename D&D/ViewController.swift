@@ -72,10 +72,22 @@ class ViewController: UIViewController {
                                             listaProficience += [i.name]
                                             //print(i.name)
                                         }
-                                        rogerinho.setPersonagem(forca: 16, destreza: 16, inteligencia: 16, sabedoria: 16, constituicao: 16, carisma: 16, traits: listaTreits, magias: magiasFiltradas.map({magia in return magia.name}), classeJson: classe, classeBonusLevelJson: nivelClasse)
+                                        var status:Status = Status()
+                                        status.carisma = 16
+                                        status.deslocamento = 9
+                                        status.forca = 15
+                                        status.destreza = 20
+                                        status.constituicao = 16
+                                        status.inteligencia = 18
+                                        status.inteligencia = 20
+                                        rogerinho.setPersonagem(status:status, traits: listaTreits, magias: magiasFiltradas.map({magia in return magia.name}), classeJson: classe, classeBonusLevelJson: nivelClasse)
+                                        
+                                        print(magias)
 
                                         rogerinho.setPersonagem(pericias: [Pericias.acrobacia,Pericias.atuacao])
                                         print(rogerinho.nome)
+                                        print(rogerinho.status.carisma)
+                                        print(rogerinho.classe)
                                         print("Magias do ROGERINHO: ",rogerinho.magias)
 
 

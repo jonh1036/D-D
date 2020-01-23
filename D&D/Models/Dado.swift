@@ -16,22 +16,22 @@ class Dado{
   func row(personagem:Personagem,atributo:Atributo)->Void{
     switch(atributo){
       case Atributo.forca:
-      valorModificador = personagem.getMod(numero:personagem.forca)
+        valorModificador = personagem.getMod(numero:personagem.status.forca)
 
       case Atributo.destreza:
-      valorModificador = personagem.getMod(numero:personagem.destreza)
+      valorModificador = personagem.getMod(numero:personagem.status.destreza)
 
       case Atributo.inteligencia:
-      valorModificador = personagem.getMod(numero:personagem.inteligencia)
+      valorModificador = personagem.getMod(numero:personagem.status.inteligencia)
 
       case Atributo.sabedoria:
-      valorModificador = personagem.getMod(numero:personagem.sabedoria)
+      valorModificador = personagem.getMod(numero:personagem.status.sabedoria)
 
       case Atributo.carisma:
-      valorModificador = personagem.getMod(numero:personagem.carisma)
+      valorModificador = personagem.getMod(numero:personagem.status.carisma)
 
       case Atributo.constituicao:
-      valorModificador = personagem.getMod(numero:personagem.constituicao)
+      valorModificador = personagem.getMod(numero:personagem.status.constituicao)
     }
 
     valorDado = Int.random(in:1...numeroFaces)
@@ -42,85 +42,85 @@ class Dado{
     switch(pericia){
 
       case Pericias.acrobacia:
-        calculo(verificacao:personagem.acrobacia,personagem:personagem)
-        valorModificador = personagem.getMod(numero:personagem.destreza)
+        calculo(verificacao:personagem.testePericias.acrobacia,personagem:personagem)
+        valorModificador = personagem.getMod(numero:personagem.status.destreza)
     
 
     case Pericias.arcanismo:
-      calculo(verificacao:personagem.arcanismo,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.inteligencia)
+      calculo(verificacao:personagem.testePericias.arcanismo,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.inteligencia)
     
 
     case Pericias.atletismo:
-      calculo(verificacao:personagem.atletismo,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.forca)
+      calculo(verificacao:personagem.testePericias.atletismo,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.forca)
     
 
     case Pericias.atuacao:
-      calculo(verificacao:personagem.atuacao,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.carisma)
+      calculo(verificacao:personagem.testePericias.atuacao,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.carisma)
     
 
     case Pericias.enganacao:
-      calculo(verificacao:personagem.enganacao,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.carisma)
+      calculo(verificacao:personagem.testePericias.enganacao,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.carisma)
     
   
     case Pericias.furtividade:
-      calculo(verificacao:personagem.furtividade,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.destreza)
+      calculo(verificacao:personagem.testePericias.furtividade,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.destreza)
     
 
     case Pericias.historia:
-      calculo(verificacao:personagem.historia,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.inteligencia)
+      calculo(verificacao:personagem.testePericias.historia,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.inteligencia)
     
 
     case Pericias.intimidacao:
-      calculo(verificacao:personagem.intimidacao,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.carisma)
+      calculo(verificacao:personagem.testePericias.intimidacao,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.carisma)
     
   
 
     case Pericias.intuicao:
-      calculo(verificacao:personagem.intuicao,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.sabedoria)
+      calculo(verificacao:personagem.testePericias.intuicao,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.sabedoria)
 
     case Pericias.investigacao:
-      calculo(verificacao:personagem.investigacao,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.inteligencia)
+      calculo(verificacao:personagem.testePericias.investigacao,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.inteligencia)
 
     case Pericias.lidarComAnimais:
-      calculo(verificacao:personagem.lidarComAnimais,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.sabedoria)
+      calculo(verificacao:personagem.testePericias.lidarComAnimais,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.sabedoria)
 
     case Pericias.meidicina:
-      calculo(verificacao:personagem.medicina,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.sabedoria)
+      calculo(verificacao:personagem.testePericias.medicina,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.sabedoria)
 
     case Pericias.natureza:
-      calculo(verificacao:personagem.natureza,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.inteligencia)  
+      calculo(verificacao:personagem.testePericias.natureza,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.inteligencia)
 
     case Pericias.percepcao:
-      calculo(verificacao:personagem.percepcao,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.sabedoria)
+      calculo(verificacao:personagem.testePericias.percepcao,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.sabedoria)
 
     case Pericias.persuasao:
-      calculo(verificacao:personagem.persuasao,personagem:personagem)
-      valorModificador = personagem.getMod(numero:personagem.carisma)
+      calculo(verificacao:personagem.testePericias.persuasao,personagem:personagem)
+      valorModificador = personagem.getMod(numero:personagem.status.carisma)
 
     case Pericias.prestigitacao:
-        calculo(verificacao:personagem.prestigitacao,personagem:personagem)
-        valorModificador = personagem.getMod(numero:personagem.destreza)
+        calculo(verificacao:personagem.testePericias.prestigitacao,personagem:personagem)
+        valorModificador = personagem.getMod(numero:personagem.status.destreza)
 
     case Pericias.religiao:
-        calculo(verificacao:personagem.religiao,personagem:personagem)
-        valorModificador = personagem.getMod(numero:personagem.inteligencia)
+        calculo(verificacao:personagem.testePericias.religiao,personagem:personagem)
+        valorModificador = personagem.getMod(numero:personagem.status.inteligencia)
 
     case Pericias.sobrevivencia:
-        calculo(verificacao:personagem.sobrevivencia,personagem:personagem)
-        valorModificador = personagem.getMod(numero:personagem.sabedoria)
+        calculo(verificacao:personagem.testePericias.sobrevivencia,personagem:personagem)
+        valorModificador = personagem.getMod(numero:personagem.status.sabedoria)
   }
 
   valorDado = Int.random(in: 1...numeroFaces)
@@ -131,34 +131,34 @@ class Dado{
   func row(personagem:Personagem,resistencia:Resistencia){
     switch resistencia{
       case Resistencia.forca:
-        calculo(verificacao:personagem.resistenciaForca,personagem:personagem)
+        calculo(verificacao:personagem.testeResistenca.resistenciaForca,personagem:personagem)
 
-        valorModificador = personagem.getMod(numero:personagem.forca)
+        valorModificador = personagem.getMod(numero:personagem.status.forca)
 
       case Resistencia.destreza:
-        calculo(verificacao:personagem.resistenciaDestreza,personagem:personagem)
+        calculo(verificacao:personagem.testeResistenca.resistenciaDestreza,personagem:personagem)
 
-        valorModificador = personagem.getMod(numero:personagem.destreza)
+        valorModificador = personagem.getMod(numero:personagem.status.destreza)
 
       case Resistencia.sabedoria:
-        calculo(verificacao:personagem.resistenciaSabedoria,personagem:personagem)
+        calculo(verificacao:personagem.testeResistenca.resistenciaSabedoria,personagem:personagem)
 
-        valorModificador = personagem.getMod(numero:personagem.sabedoria)
+        valorModificador = personagem.getMod(numero:personagem.status.sabedoria)
 
       case Resistencia.inteligencia:
-        calculo(verificacao:personagem.resistenciaInteligencia,personagem:personagem)
+        calculo(verificacao:personagem.testeResistenca.resistenciaInteligencia,personagem:personagem)
 
-        valorModificador = personagem.getMod(numero:personagem.inteligencia)
+        valorModificador = personagem.getMod(numero:personagem.status.inteligencia)
 
       case Resistencia.carisma:
-        calculo(verificacao:personagem.resistenciaCarisma,personagem:personagem)
+        calculo(verificacao:personagem.testeResistenca.resistenciaCarisma,personagem:personagem)
 
-        valorModificador = personagem.getMod(numero:personagem.carisma)
+        valorModificador = personagem.getMod(numero:personagem.status.carisma)
 
       case Resistencia.constituicao:
-        calculo(verificacao:personagem.resistenciaConstituicao,personagem:personagem)
+        calculo(verificacao:personagem.testeResistenca.resistenciaConstituicao,personagem:personagem)
         
-        valorModificador = personagem.getMod(numero:personagem.constituicao)
+        valorModificador = personagem.getMod(numero:personagem.status.constituicao)
 
     }
 

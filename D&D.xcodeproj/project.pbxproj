@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07033DFB23D9F86D00A38CFF /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07033DFA23D9F86D00A38CFF /* Status.swift */; };
+		07033DFD23D9F9B900A38CFF /* Resistencias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07033DFC23D9F9B900A38CFF /* Resistencias.swift */; };
+		07033DFF23D9FAAE00A38CFF /* TestePericias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07033DFE23D9FAAE00A38CFF /* TestePericias.swift */; };
 		07AF23DB23D889D5001C8563 /* Personagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23DA23D889D5001C8563 /* Personagem.swift */; };
 		07AF23DD23D889D8001C8563 /* Dado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23DC23D889D8001C8563 /* Dado.swift */; };
 		07AF23DF23D8A166001C8563 /* ClasseEspecifica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23DE23D8A166001C8563 /* ClasseEspecifica.swift */; };
-		07AF23E123D8ACEE001C8563 /* EspacosMagia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23E023D8ACEE001C8563 /* EspacosMagia.swift */; };
-		07AF23E323D8B426001C8563 /* Subclasse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23E223D8B426001C8563 /* Subclasse.swift */; };
 		07AF23E723D8ECD0001C8563 /* MagiasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23E623D8ECD0001C8563 /* MagiasModel.swift */; };
+		07ECDB2B23DA0C75004744A9 /* EspacoMagia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ECDB2A23DA0C75004744A9 /* EspacoMagia.swift */; };
 		19045EEF23D777890072E2B7 /* SpecificRace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19045EEE23D777890072E2B7 /* SpecificRace.swift */; };
 		19045EF123D78CCE0072E2B7 /* SpecificEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19045EF023D78CCE0072E2B7 /* SpecificEquipment.swift */; };
 		19045EF323D7910F0072E2B7 /* SpecificSpell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19045EF223D7910F0072E2B7 /* SpecificSpell.swift */; };
@@ -53,12 +55,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07033DFA23D9F86D00A38CFF /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		07033DFC23D9F9B900A38CFF /* Resistencias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resistencias.swift; sourceTree = "<group>"; };
+		07033DFE23D9FAAE00A38CFF /* TestePericias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestePericias.swift; sourceTree = "<group>"; };
 		07AF23DA23D889D5001C8563 /* Personagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personagem.swift; sourceTree = "<group>"; };
 		07AF23DC23D889D8001C8563 /* Dado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dado.swift; sourceTree = "<group>"; };
 		07AF23DE23D8A166001C8563 /* ClasseEspecifica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClasseEspecifica.swift; sourceTree = "<group>"; };
-		07AF23E023D8ACEE001C8563 /* EspacosMagia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspacosMagia.swift; sourceTree = "<group>"; };
-		07AF23E223D8B426001C8563 /* Subclasse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subclasse.swift; sourceTree = "<group>"; };
 		07AF23E623D8ECD0001C8563 /* MagiasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiasModel.swift; sourceTree = "<group>"; };
+		07ECDB2A23DA0C75004744A9 /* EspacoMagia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspacoMagia.swift; sourceTree = "<group>"; };
 		19045EEE23D777890072E2B7 /* SpecificRace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificRace.swift; sourceTree = "<group>"; };
 		19045EF023D78CCE0072E2B7 /* SpecificEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificEquipment.swift; sourceTree = "<group>"; };
 		19045EF223D7910F0072E2B7 /* SpecificSpell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificSpell.swift; sourceTree = "<group>"; };
@@ -125,7 +129,7 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		195E13CC23D623730070B5AB /* Models */ = {
+		07ECDB2923DA0AEB004744A9 /* APIModels */ = {
 			isa = PBXGroup;
 			children = (
 				797F3B5E23D4FE6600AF5FD7 /* Models.swift */,
@@ -140,11 +144,20 @@
 				19045EEE23D777890072E2B7 /* SpecificRace.swift */,
 				19045EF023D78CCE0072E2B7 /* SpecificEquipment.swift */,
 				19045EF223D7910F0072E2B7 /* SpecificSpell.swift */,
+				07AF23DE23D8A166001C8563 /* ClasseEspecifica.swift */,
+				07ECDB2A23DA0C75004744A9 /* EspacoMagia.swift */,
+			);
+			path = APIModels;
+			sourceTree = "<group>";
+		};
+		195E13CC23D623730070B5AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07033DFE23D9FAAE00A38CFF /* TestePericias.swift */,
+				07033DFC23D9F9B900A38CFF /* Resistencias.swift */,
 				07AF23DC23D889D8001C8563 /* Dado.swift */,
 				07AF23DA23D889D5001C8563 /* Personagem.swift */,
-				07AF23DE23D8A166001C8563 /* ClasseEspecifica.swift */,
-				07AF23E023D8ACEE001C8563 /* EspacosMagia.swift */,
-				07AF23E223D8B426001C8563 /* Subclasse.swift */,
+				07033DFA23D9F86D00A38CFF /* Status.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +183,7 @@
 		797F3B3923D4FE3500AF5FD7 /* D&D */ = {
 			isa = PBXGroup;
 			children = (
+				07ECDB2923DA0AEB004744A9 /* APIModels */,
 				07AF23E923D9E8D2001C8563 /* Enums */,
 				195E13CC23D623730070B5AB /* Models */,
 				797F3B3A23D4FE3500AF5FD7 /* AppDelegate.swift */,
@@ -297,17 +311,19 @@
 				195E13D823D62A000070B5AB /* AbilityBonuses.swift in Sources */,
 				19045EEF23D777890072E2B7 /* SpecificRace.swift in Sources */,
 				1943984F23D9EBFA00E54FE5 /* Antecedente.swift in Sources */,
+				07ECDB2B23DA0C75004744A9 /* EspacoMagia.swift in Sources */,
+				07033DFF23D9FAAE00A38CFF /* TestePericias.swift in Sources */,
 				07AF23DF23D8A166001C8563 /* ClasseEspecifica.swift in Sources */,
 				1943984323D9EB0D00E54FE5 /* Classe.swift in Sources */,
 				1943984523D9EB3C00E54FE5 /* Raca.swift in Sources */,
+				07033DFD23D9F9B900A38CFF /* Resistencias.swift in Sources */,
 				19045EF123D78CCE0072E2B7 /* SpecificEquipment.swift in Sources */,
 				1943984D23D9EBE100E54FE5 /* Resistencia.swift in Sources */,
 				07AF23DB23D889D5001C8563 /* Personagem.swift in Sources */,
 				195E13D423D628E40070B5AB /* Races.swift in Sources */,
 				195E13D623D629A30070B5AB /* Skills.swift in Sources */,
-				07AF23E323D8B426001C8563 /* Subclasse.swift in Sources */,
+				07033DFB23D9F86D00A38CFF /* Status.swift in Sources */,
 				195E13DE23D648C50070B5AB /* APIClasses.swift in Sources */,
-				07AF23E123D8ACEE001C8563 /* EspacosMagia.swift in Sources */,
 				195E13D223D627BC0070B5AB /* Class.swift in Sources */,
 				797F3B3F23D4FE3500AF5FD7 /* ViewController.swift in Sources */,
 				797F3B5D23D4FE5A00AF5FD7 /* Service.swift in Sources */,

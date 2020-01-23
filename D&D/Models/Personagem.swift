@@ -1,11 +1,10 @@
 class Personagem{
     //MARK: - Caracteristicas geriasi
     var nome:String = ""
-    var alinhamento: Alinhamento = .lealBom
+    var alinhamento: Alinhamento = .caoticoBom
     var classe: Classe = .paladino
     var antecedente: Antecedente = .nobre
     var raca: Raca = .humano
-    var xp:Int = 0
     var proeficiencia:Int = 2
     var idiomas:[String] = []
     var itens:[String] = []
@@ -14,61 +13,24 @@ class Personagem{
     var freeSkill:Int = 0
     var traits:[String] = []
     var habilidadesClasse:[String] = []
-    var espacosMagia:EspacosMagia?
-    var subclass:Subclasse?
-    
+    var espacosMagia: EspacosMagia?
     
     //MARK: - Status
-    public var forca:Int = 0
-    var destreza:Int = 0
-    var sabedoria:Int = 0
-    var inteligencia:Int = 0
-    var carisma:Int = 0
-    var constituicao:Int = 0
-    var vidaAtual:Int = 0
-    var vidaMax:Int = 0
-    var armadura:Int = 0
+    var status:Status = Status()
+    
+    //MARK: - Magias
     var magias:[String] = []
     
     //MARK: - Resistencias
-    var resistenciaForca:Bool = false
-    var resistenciaDestreza:Bool = false
-    var resistenciaInteligencia:Bool = false
-    var resistenciaSabedoria:Bool = false
-    var resistenciaConstituicao:Bool = false
-    var resistenciaCarisma:Bool = false
+    var testeResistenca:TesteResistencia = TesteResistencia()
     
     //MARK: - Pericias
-    var acrobacia:Bool = false
-    var arcanismo:Bool = false
-    var atletismo:Bool = false
-    var atuacao:Bool = false
-    var enganacao:Bool = false
-    var furtividade:Bool = false
-    var historia:Bool = false
-    var intimidacao:Bool = false
-    var intuicao:Bool = false
-    var investigacao:Bool = false
-    var lidarComAnimais:Bool = false
-    var medicina:Bool = false
-    var natureza:Bool = false
-    var percepcao:Bool = false
-    var persuasao:Bool = false
-    var prestigitacao:Bool = false
-    var religiao:Bool = false
-    var sobrevivencia:Bool = false
-    var deslocamento:Float = 0
+    var testePericias:TestePericias = TestePericias()
     
     //MARK: - proeficiencias
-    
-    
-    
     var proeficiencias:[String] = []
     
-    
-    
     //MARK: - calcilo de modificadores
-    
     public func getMod(numero:Int)->Int{
         switch(numero){
         case 0,1:
@@ -98,6 +60,12 @@ class Personagem{
         }
     }
     
+    //MARK: - atrubuir satatus ao personagem
+    func setPersonagem(status:Status){
+        self.status = status
+    }
+    
+    //MARK: - SetPersonagem (1)
     func setPersonagem(nome:String,classe:Classe,raca:Raca,antecedente:Antecedente,alinhamento:Alinhamento){
         self.nome = nome
         self.classe = classe
@@ -106,42 +74,32 @@ class Personagem{
         self.alinhamento = alinhamento
     }
     
-    
-    //MARK: - SetPersonagem 2
-    func setPersonagem(forca:Int,destreza:Int,inteligencia:Int,sabedoria:Int,constituicao:Int,carisma:Int,traits:[String],magias:[String]?,classeJson:Class,classeBonusLevelJson:ClasseEspecifica){
-        
+    //MARK: - Adicionar Bonus de classe
+    func setBonusClasse(classeBonusLevelJson:ClasseEspecifica){
         for i in classeBonusLevelJson.features{
             self.habilidadesClasse += [i.name]
         }
-        
         if let habilidades = classeBonusLevelJson.feature_choices{
             for i in habilidades {
                 self.habilidadesClasse += [i.name]
             }
         }
-        
         self.espacosMagia = classeBonusLevelJson.spellcasting
+    }
+    
+    //MARK: - Adcionar Pericias e proeficiencias
+    func setPericias(classeJson:Class){
         
-        self.forca = forca
-        self.destreza = destreza
-        self.inteligencia = inteligencia
-        self.sabedoria = sabedoria
-        self.carisma = carisma
-        self.constituicao = constituicao
+//        for i in classeJson.proficiency_choices{
+//            for j in i.from{
+//                if let pericia: Pericias = Pericias(rawValue: j.name) {
+//                    print("🧠 \(pericia)")
+//                }
+//            }
+//        }
         
-        
-        
-        self.vidaMax = classeJson.hit_die + getMod(numero: self.constituicao)
         for i in classeJson.proficiencies{
             self.proeficiencias += [i.name]
-        }
-        
-        for i in classeJson.proficiency_choices{
-            for j in i.from{
-                if let pericia: Pericias = Pericias(rawValue: j.name) {
-                    print("🧠 \(pericia)")
-                }
-            }
         }
         
         for i in classeJson.proficiency_choices{
@@ -149,233 +107,250 @@ class Personagem{
                 switch(j.name) {
                     
                 case "Skill: Acrobatics":
-                    self.acrobacia = true
+                    self.testePericias.acrobacia = true
                 case "Skill: Arcana":
-                    self.arcanismo = true
+                    self.testePericias.arcanismo = true
                 case "Skill: Athletics":
-                    self.atletismo = true
+                    self.testePericias.atletismo = true
                 case "Skill: Performance":
-                    self.atuacao = true
+                    self.testePericias.atuacao = true
                 case "Skill: Stealth":
-                    self.furtividade = true
+                    self.testePericias.furtividade = true
                 case "Skill: History":
-                    self.historia = true
+                    self.testePericias.historia = true
                 case "Skill: Animal Handling":
-                    self.lidarComAnimais = true
+                    self.testePericias.lidarComAnimais = true
                 case "Skill: Deception":
-                    self.enganacao = true
+                    self.testePericias.enganacao = true
                 case "Skill: Insight":
-                    self.intuicao = true
+                    self.testePericias.intuicao = true
                 case "Skill: Intimidation":
-                    self.intimidacao = true
+                    self.testePericias.intimidacao = true
                 case "Skill: Investigation":
-                    self.investigacao = true
+                    self.testePericias.investigacao = true
                 case "Skill: Medicine":
-                    self.medicina = true
+                    self.testePericias.medicina = true
                 case "Skill: Nature":
-                    self.natureza = true
+                    self.testePericias.natureza = true
                 case "Skill: Perception":
-                    self.percepcao = true
+                    self.testePericias.percepcao = true
                 case "Skill: Persuasion":
-                    self.persuasao = true
+                    self.testePericias.persuasao = true
                 case "Skill: Religion":
-                    self.religiao = true
+                    self.testePericias.religiao = true
                 case "Skill: Sleight of Hand":
-                    self.prestigitacao = true
+                    self.testePericias.prestigitacao = true
                 case "Skill: Survival":
-                    self.sobrevivencia = true
+                    self.testePericias.sobrevivencia = true
                 default:
                     return
                 }
             }
         }
         
+    }
+    
+    //MARK: - Adicionar testes de resistencia
+    
+    func setResistencias(classeJson:Class){
         for i in classeJson.saving_throws{
             switch(i.name){
             case "CHA":
-                self.resistenciaCarisma = true
+                self.testeResistenca.resistenciaCarisma = true
             case "CON":
-                self.resistenciaConstituicao = true
+                self.testeResistenca.resistenciaConstituicao = true
             case "DEX":
-                self.resistenciaDestreza = true
+                self.testeResistenca.resistenciaDestreza = true
             case "INT":
-                self.resistenciaInteligencia = true
+                self.testeResistenca.resistenciaInteligencia = true
             case "STR":
-                self.resistenciaForca = true
+                self.testeResistenca.resistenciaForca = true
             case "WIS":
-                self.resistenciaSabedoria = true
+                self.testeResistenca.resistenciaSabedoria = true
             default:
                 return
             }
         }
-        
-        
-        
-        switch raca{
-        case Raca.anaoMontanha:
-            self.forca += 2
-            self.constituicao += 2
-            self.deslocamento = 7.5
-            
-        case Raca.anaoColina:
-            self.sabedoria += 1
-            self.constituicao += 2
-            self.deslocamento = 7.5
-            self.vidaMax += 1
-            self.vidaAtual += 1
-            
-        case Raca.elfoAlto:
-            self.destreza += 2
-            self.deslocamento = 9
-            self.percepcao = true
-            self.inteligencia += 1
-            self.proeficiencias += ["Espada Longa","Espada Curta","Arco Curto","Arco Longo"]
-            
-            if let spells:[String] = magias {
-                self.magias += spells
-            }
-            
-            //Adcionar truque a proxima função
-            
-        case Raca.elfoFloresta:
-            self.destreza += 2
-            self.deslocamento = 9
-            self.percepcao = true
-            self.sabedoria += 1
-            self.deslocamento = 10.5
-            self.traits += ["Mask of the Wild","Flet of Foot"]
-            self.proeficiencias += ["Espada Longa","Espada Curta","Arco Curto","Arco Longo"]
-            
-            
-        case Raca.elfoNegro:
-            self.destreza += 2
-            self.deslocamento = 9
-            self.percepcao = true
-            self.carisma += 1
-            self.traits += ["Superior Dark Vision","Sunlinght Sentivity", "Drow Magic"]
-            self.proeficiencias = ["Rapirs", "Shortswords", "Hand Crossbows"]
-            
-            // Adicionar magias no level UP
-            
-        case Raca.halflingLeve:
-            self.destreza += 2
-            self.deslocamento = 7.5
-            self.carisma += 1
-            self.traits += ["Naturally Stealthy"]
-            
-            
-        case Raca.halflingRobusto:
-            self.destreza += 2
-            self.deslocamento = 7.5
-            self.constituicao += 1
-            self.traits += ["South Resilience"]
-            
-        case Raca.humano:
-            self.forca += 1
-            self.destreza += 1
-            self.carisma += 1
-            self.constituicao += 1
-            self.sabedoria += 1
-            self.inteligencia += 1
-            self.deslocamento = 9
-            
-        case Raca.draconato:
-            self.forca += 2
-            self.carisma += 1
-            self.deslocamento = 9
-            
-        case Raca.gnomoFloresta:
-            self.inteligencia += 2
-            self.deslocamento = 7.5
-            self.destreza += 1
-            self.traits += ["Natural illusionnist","Speak With Small Beasts"]
-            
-        case Raca.gnomoRocha:
-            self.inteligencia += 2
-            self.deslocamento = 7.5
-            self.constituicao += 1
-            self.traits += ["Artficer's Lore","Tinker"]
-            
-            
-        case Raca.meioElfo:
-            self.carisma += 2
-            self.freePoints += 2
-            self.freeSkill += 2
-            
-        case Raca.meioOrc:
-            self.forca += 2
-            self.constituicao += 2
-            self.intimidacao = true
-            
-        case Raca.tielfing:
-            self.carisma += 2
-            self.inteligencia += 2
-        }
-        self.traits += traits
-        
-        
     }
     
+    //MARK: - Adcionar Bonus de Raça
+    
+    func setBonusRaca(magias:[String]?){
+        switch raca{
+            case Raca.anaoMontanha:
+                self.status.forca += 2
+                self.status.constituicao += 2
+                self.status.deslocamento = 7.5
+                
+            case Raca.anaoColina:
+                self.status.sabedoria += 1
+                self.status.constituicao += 2
+                self.status.deslocamento = 7.5
+                self.status.vidaMax += 1
+                self.status.vida += 1
+                
+            case Raca.elfoAlto:
+                self.status.destreza += 2
+                self.status.deslocamento = 9
+                self.testePericias.percepcao = true
+                self.status.inteligencia += 1
+                self.proeficiencias += ["Espada Longa","Espada Curta","Arco Curto","Arco Longo"]
+                
+                if let spells:[String] = magias {
+                    self.magias += spells
+                }
+                
+                //Adcionar truque a proxima função
+            case Raca.elfoFloresta:
+                self.status.destreza += 2
+                self.status.deslocamento = 9
+                self.testePericias.percepcao = true
+                self.status.sabedoria += 1
+                self.status.deslocamento = 10.5
+                self.traits += ["Mask of the Wild","Flet of Foot"]
+                self.proeficiencias += ["Espada Longa","Espada Curta","Arco Curto","Arco Longo"]
+                
+                
+            case Raca.elfoNegro:
+                self.status.destreza += 2
+                self.status.deslocamento = 9
+                self.testePericias.percepcao = true
+                self.status.carisma += 1
+                self.traits += ["Superior Dark Vision","Sunlinght Sentivity", "Drow Magic"]
+                self.proeficiencias = ["Rapirs", "Shortswords", "Hand Crossbows"]
+                
+                // Adicionar magias no level UP
+                
+            case Raca.halflingLeve:
+                self.status.destreza += 2
+                self.status.deslocamento = 7.5
+                self.status.carisma += 1
+                self.traits += ["Naturally Stealthy"]
+                
+                
+            case Raca.halflingRobusto:
+                self.status.destreza += 2
+                self.status.deslocamento = 7.5
+                self.status.constituicao += 1
+                self.traits += ["South Resilience"]
+                
+            case Raca.humano:
+                self.status.forca += 1
+                self.status.destreza += 1
+                self.status.carisma += 1
+                self.status.constituicao += 1
+                self.status.sabedoria += 1
+                self.status.inteligencia += 1
+                self.status.deslocamento = 9
+                
+            case Raca.draconato:
+                self.status.forca += 2
+                self.status.carisma += 1
+                self.status.deslocamento = 9
+                
+            case Raca.gnomoFloresta:
+                self.status.inteligencia += 2
+                self.status.deslocamento = 7.5
+                self.status.destreza += 1
+                self.traits += ["Natural illusionnist","Speak With Small Beasts"]
+                
+            case Raca.gnomoRocha:
+                self.status.inteligencia += 2
+                self.status.deslocamento = 7.5
+                self.status.constituicao += 1
+                self.traits += ["Artficer's Lore","Tinker"]
+                
+            case Raca.meioElfo:
+                self.status.carisma += 2
+                self.freePoints += 2
+                self.freeSkill += 2
+                
+            case Raca.meioOrc:
+                self.status.forca += 2
+                self.status.constituicao += 2
+                self.testePericias.intimidacao = true
+                
+            case Raca.tielfing:
+                self.status.carisma += 2
+                self.status.inteligencia += 2
+        }
+    }
+    
+    //MARK: - Adiconar Magias
+    
+    func setMagias(magias:[String]?){
+        guard let magias = magias else {return}
+        self.magias += magias
+    }
+    //MARK: - Adicionar pericias
     func setPersonagem(pericias:[Pericias]){
         for i in pericias{
             switch i{
             case Pericias.acrobacia:
-                self.acrobacia = true
+                self.testePericias.acrobacia = true
                 
             case Pericias.arcanismo:
-                self.arcanismo = true
+                self.testePericias.arcanismo = true
                 
             case Pericias.atletismo:
-                self.atletismo = true
+                self.testePericias.atletismo = true
                 
             case Pericias.atuacao:
-                self.atuacao = true
+                self.testePericias.atuacao = true
                 
             case Pericias.enganacao:
-                self.enganacao = true
+                self.testePericias.enganacao = true
                 
             case Pericias.furtividade:
-                self.furtividade = true
+                self.testePericias.furtividade = true
                 
             case Pericias.historia:
-                self.historia = true
+                self.testePericias.historia = true
                 
             case Pericias.intimidacao:
-                self.intimidacao = true
+                self.testePericias.intimidacao = true
                 
             case Pericias.intuicao:
-                self.intuicao = true
+                self.testePericias.intuicao = true
                 
             case Pericias.investigacao:
-                self.investigacao = true
+                self.testePericias.investigacao = true
                 
             case Pericias.lidarComAnimais:
-                self.lidarComAnimais = true
+                self.testePericias.lidarComAnimais = true
                 
             case Pericias.meidicina:
-                self.medicina = true
+                self.testePericias.medicina = true
                 
             case Pericias.natureza:
-                self.natureza = true
+                self.testePericias.natureza = true
                 
             case Pericias.percepcao:
-                self.percepcao = true
+                self.testePericias.percepcao = true
                 
             case Pericias.persuasao:
-                self.persuasao = true
+                self.testePericias.persuasao = true
                 
             case Pericias.prestigitacao:
-                self.prestigitacao = true
+                self.testePericias.prestigitacao = true
                 
             case Pericias.religiao:
-                self.religiao = true
+                self.testePericias.religiao = true
                 
             case Pericias.sobrevivencia:
-                self.sobrevivencia = true
+                self.testePericias.sobrevivencia = true
                 
             }
         }
     }
-    
-    
+    //MARK: - SetPersonagem (2)
+    func setPersonagem(status:Status,traits:[String],magias:[String]?,classeJson:Class,classeBonusLevelJson:ClasseEspecifica){
+        self.setPersonagem(status: status)
+        self.setBonusClasse(classeBonusLevelJson: classeBonusLevelJson)
+        self.setPericias(classeJson: classeJson)
+        self.setResistencias(classeJson: classeJson)
+        self.setBonusRaca(magias: magias)
+        self.traits += traits
+        self.setMagias(magias: magias)
+    }
 }
