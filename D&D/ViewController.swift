@@ -15,75 +15,96 @@ class ViewController: UIViewController {
     var equipments: [RootStruct] = []
     var spells: [RootStruct] = []
     var categories: [RootStruct] = []
+    
     var race: SpecificRace?
     var classe: Class?
     var equipment: SpecificEquipment?
     var spell: SpecificSpell?
+    var nivelClasse: ClasseEspecifica?
+    var magiaIndividual:[MagiasModel]=[]
+    var contador:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadGeneric(path: "http://www.dnd5eapi.co/api/spells/blade-barrier", type: spell) { jsonStructs in
-            if let jsonStructs = jsonStructs {
-                self.spell = jsonStructs
-                print(self.spell)
-            } else {
-                print("Error")
-                self.spell = nil
-            }
-        }
-    }
+        var rogerinho:Personagem = Personagem()
+        rogerinho.setPersonagem(nome: "Rogerinho", classe: .feiticeiro, raca: Raca.elfoAlto, antecedente: Antecedente.orfao, alinhamento: .lealBom)
 
-    func loadGeneric<T: Decodable>(path: String, type: T, completionHandler: @escaping (T?) -> Void) {
-        guard let url = URL(string: path) else { return }
-        let request = URLRequest(url: url)
-        
-        URLSession.shared.dataTask(with: request){ data, response, error in
-            if let e = error {
-                print(e.localizedDescription)
-                return
-            }
+
+        Router.loadGeneric(path: "http://www.dnd5eapi.co/api/classes/ranger", type: Class.self) { [weak self] rogerinhofake in
+            self?.classe = rogerinhofake ?? nil
+             guard let classe = self?.classe else { return }
             
-            if let data = data, let response = response {
-                
-                guard let json = try? JSONDecoder().decode(T.self ,from: data) else {
-                    print("Not json")
-                    return
+            Router.loadGeneric(path: "http://www.dnd5eapi.co/api/spells", type: APIClasses.self){[weak self ] magias in
+                guard let magias = magias else{return}
+                let complemento = magias.results
+                print(Router.baseUrl+complemento[1].url)
+                for i in magias.results{
+                    Router.loadGeneric(path: Router.baseUrl+i.url, type: MagiasModel.self){ magia in
+                        guard let magia = magia else {return}
+                        self?.magiaIndividual += [magia]
+                        guard let magias = self?.magiaIndividual else {return}
+                        if(magias.count == 318){
+                            
+                            guard let magiasFiltradas = MagiasModel.filtrarMagiaPorClasse(magias: magias, personagem:rogerinho) ?? nil else {return}
+                                let urlLevelClasse = Router.baseUrl + classe.url + "/levels/1"
+                                Router.loadGeneric(path: "http://dnd5eapi.co/api/races/elf", type: SpecificRace.self) { raca in
+                                    self?.race = raca ?? nil
+                                    Router.loadGeneric(path:urlLevelClasse, type: ClasseEspecifica.self) { classeLevel in
+                                        self?.nivelClasse = classeLevel ?? nil
+
+
+                                        guard let race = self?.race else { return }
+                                        guard let nivelClasse = self?.nivelClasse else { return }
+
+                    //                    print("Nome: "+classe.name)
+                    //                    print("Quantidade de Proficiencias: \(classe.proficiencies.count)")
+                    //                    classe.proficiencies.forEach {
+                    //                        print("  - "+$0.name)
+                    //                    }
+                                        var listaTreits:[String] = []
+                                        for i in race.traits{
+                                            listaTreits += [i.name]
+                                        }
+
+                                        var listaProficience:[String] = []
+
+                                        for i in classe.proficiencies{
+                                            listaProficience += [i.name]
+                                            //print(i.name)
+                                        }
+                                        rogerinho.setPersonagem(forca: 16, destreza: 16, inteligencia: 16, sabedoria: 16, constituicao: 16, carisma: 16, traits: listaTreits, magias: magiasFiltradas.map({magia in return magia.name}), classeJson: classe, classeBonusLevelJson: nivelClasse)
+
+                                        rogerinho.setPersonagem(pericias: [Pericias.acrobacia,Pericias.atuacao])
+                                        print(rogerinho.nome)
+                                        print("Magias do ROGERINHO: ",rogerinho.magias)
+
+
+                                    }
+                                }
+                            
+                            
+                        }
+                        
+                    }
                 }
-                
-                completionHandler(json)
-                
-            } else {
-                print("Error")
-                return
+            
             }
-        }.resume()
+
+
+        }
+        
+
+        
+        
+        
+        
     }
     
-    func load(path: String, completionHandler: @escaping ([RootStruct]?) -> Void) {
-        guard let url = URL(string: path) else { return }
-        let request = URLRequest(url: url)
-        
-        URLSession.shared.dataTask(with: request){ data, response, error in
-            if let e = error {
-                print(e.localizedDescription)
-                return
-            }
-            
-            if let data = data, let response = response {
-                
-                guard let json = try? JSONDecoder().decode(APIClasses.self ,from: data) else {
-                    print("Not json")
-                    return
-                }
-                
-                completionHandler(json.results)
-                
-            } else {
-                print("Error")
-                return
-            }
-        }.resume()
-    }
+    
+    
+    
+    
+
 }
 
 /*class ViewController: UIViewController {

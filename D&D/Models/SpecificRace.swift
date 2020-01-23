@@ -6,7 +6,7 @@ struct SpecificRace: Decodable {
     let speed: Int
     let ability_bonuses: [AbilityBonuses]
     let starting_proficiencies: [BasicStruct]
-    let starting_proficiency_options: ProficiencyOptions
+    let starting_proficiency_options: ProficiencyOptions?
     let languages: [BasicStruct]
     let traits: [BasicStruct]
     let subraces: [BasicStruct]
