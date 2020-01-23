@@ -30,7 +30,7 @@ class Personagem{
   var armadura:Int = 0
   var magias:[String] = []
 
-  //Resistencias
+  //MARK: - Resistencias
   var resistenciaForca:Bool = false
   var resistenciaDestreza:Bool = false
   var resistenciaInteligencia:Bool = false
@@ -38,7 +38,7 @@ class Personagem{
   var resistenciaConstituicao:Bool = false
   var resistenciaCarisma:Bool = false
 
-  //Pericias
+  //MARK: - Pericias
   var acrobacia:Bool = false
   var arcanismo:Bool = false
   var atletismo:Bool = false
@@ -59,7 +59,7 @@ class Personagem{
   var sobrevivencia:Bool = false
   var deslocamento:Float = 0
 
-  //proeficiencias
+  //MARK: - proeficiencias
 
 
 
@@ -67,7 +67,7 @@ class Personagem{
 
 
 
-  //calcilo de modificadores
+  //MARK: - calcilo de modificadores
 
   public func getMod(numero:Int)->Int{
     switch(numero){
@@ -106,6 +106,8 @@ class Personagem{
     self.alinhamento = alinhamento
   }
 
+    
+    //MARK: - SetPersonagem 2
     func setPersonagem(forca:Int,destreza:Int,inteligencia:Int,sabedoria:Int,constituicao:Int,carisma:Int,traits:[String],magias:[String]?,classeJson:Class,classeBonusLevelJson:ClasseEspecifica){
         
         for i in classeBonusLevelJson.features{
@@ -127,7 +129,7 @@ class Personagem{
         self.carisma = carisma
         self.constituicao = constituicao
         
-        //MARK: - Classe
+
         
         self.vidaMax = classeJson.hit_die + getMod(numero: self.constituicao)
         for i in classeJson.proficiencies{
