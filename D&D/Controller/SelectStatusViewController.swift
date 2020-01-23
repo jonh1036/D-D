@@ -12,11 +12,16 @@ class SelectStatusViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let numbers = ["12", "13", "14", "15"]
+    let numbers = ["8", "10", "12", "13", "14", "15"]
     
     var attributes = [
-        Attribute(name: "forca"),
-        Attribute(name: "destreza")]
+        Attribute(name: "Força"),
+        Attribute(name: "Destreza"),
+        Attribute(name: "Inteligência"),
+        Attribute(name: "Sabedoria"),
+        Attribute(name: "Constituição"),
+        Attribute(name: "Carisma"),
+    ]
     
     
     override func viewDidLoad() {
@@ -47,8 +52,7 @@ extension SelectStatusViewController: UITableViewDelegate, UITableViewDataSource
         let attribute = attributes[indexPath.row]
         
         cell.label.text = attribute.name
-        cell.textField.text = attribute.currentValue
-        
+        cell.textField.text = attribute.currentValue == "" ? "Escolha" : attribute.currentValue 
         cell.attribute = attribute
         cell.changeValueDelegate = self
         cell.pickerData = numbers

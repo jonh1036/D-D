@@ -2,10 +2,10 @@
 
 class Personagem{
     var nome:String = ""
-    var alinhamento: Alinhamento = .caoticoBom
-    var classe: Classe = .paladino
-    var antecedente: Antecedente = .nobre
-    var raca: Raca = .humano
+    var alinhamento: Alinhamento = .CaoticoBom
+    var classe: Classe = .Paladino
+    var antecedente: Antecedente = .Nobre
+    var raca: Raca = .Humano
     var proeficiencia:Int = 2
     var idiomas:[String] = []
     var itens:[String] = []
@@ -178,19 +178,19 @@ class Personagem{
     
     func setBonusRaca(magias:[String]?){
         switch raca{
-            case Raca.anaoMontanha:
+            case Raca.AnaoMontanha:
                 self.status.forca += 2
                 self.status.constituicao += 2
                 self.status.deslocamento = 7.5
                 
-            case Raca.anaoColina:
+            case Raca.AnaoColina:
                 self.status.sabedoria += 1
                 self.status.constituicao += 2
                 self.status.deslocamento = 7.5
                 self.status.vidaMax += 1
                 self.status.vida += 1
                 
-            case Raca.elfoAlto:
+            case Raca.ElfoAlto:
                 self.status.destreza += 2
                 self.status.deslocamento = 9
                 self.testePericias.percepcao = true
@@ -202,7 +202,7 @@ class Personagem{
                 }
                 
                 //Adcionar truque a proxima função
-            case Raca.elfoFloresta:
+            case Raca.ElfoFloresta:
                 self.status.destreza += 2
                 self.status.deslocamento = 9
                 self.testePericias.percepcao = true
@@ -212,7 +212,7 @@ class Personagem{
                 self.proeficiencias += ["Espada Longa","Espada Curta","Arco Curto","Arco Longo"]
                 
                 
-            case Raca.elfoNegro:
+            case Raca.ElfoNegro:
                 self.status.destreza += 2
                 self.status.deslocamento = 9
                 self.testePericias.percepcao = true
@@ -222,20 +222,20 @@ class Personagem{
                 
                 // Adicionar magias no level UP
                 
-            case Raca.halflingLeve:
+            case Raca.HalflingLeve:
                 self.status.destreza += 2
                 self.status.deslocamento = 7.5
                 self.status.carisma += 1
                 self.traits += ["Naturally Stealthy"]
                 
                 
-            case Raca.halflingRobusto:
+            case Raca.HalflingRobusto:
                 self.status.destreza += 2
                 self.status.deslocamento = 7.5
                 self.status.constituicao += 1
                 self.traits += ["South Resilience"]
                 
-            case Raca.humano:
+            case Raca.Humano:
                 self.status.forca += 1
                 self.status.destreza += 1
                 self.status.carisma += 1
@@ -244,34 +244,34 @@ class Personagem{
                 self.status.inteligencia += 1
                 self.status.deslocamento = 9
                 
-            case Raca.draconato:
+            case Raca.Draconato:
                 self.status.forca += 2
                 self.status.carisma += 1
                 self.status.deslocamento = 9
                 
-            case Raca.gnomoFloresta:
+            case Raca.GnomoFloresta:
                 self.status.inteligencia += 2
                 self.status.deslocamento = 7.5
                 self.status.destreza += 1
                 self.traits += ["Natural illusionnist","Speak With Small Beasts"]
                 
-            case Raca.gnomoRocha:
+            case Raca.GnomoRocha:
                 self.status.inteligencia += 2
                 self.status.deslocamento = 7.5
                 self.status.constituicao += 1
                 self.traits += ["Artficer's Lore","Tinker"]
                 
-            case Raca.meioElfo:
+            case Raca.MeioElfo:
                 self.status.carisma += 2
                 self.freePoints += 2
                 self.freeSkill += 2
                 
-            case Raca.meioOrc:
+            case Raca.MeioOrc:
                 self.status.forca += 2
                 self.status.constituicao += 2
                 self.testePericias.intimidacao = true
                 
-            case Raca.tielfing:
+            case Raca.Tielfing:
                 self.status.carisma += 2
                 self.status.inteligencia += 2
         }

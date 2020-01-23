@@ -48,19 +48,22 @@ enum Router {
     case abilityScores //
     case subclasses //
     case subraces //
+    case spells
     
     static var baseUrl = "https://www.dnd5eapi.co"
     
     var endpoint: String {
         switch self {
         case .classes:
-            return "\(Router.baseUrl)classes"
+            return "\(Router.baseUrl)/api/classes"
+        case .spells:
+            return "\(Router.baseUrl)/api/spells"
         case .conditions:
             return  "\(Router.baseUrl)conditions"
         case .damageTypes:
             return  "\(Router.baseUrl)damage-types"
         case .equipment:
-            return  "\(Router.baseUrl)equipment"
+            return  "\(Router.baseUrl)/api/equipment"
         case .monsters:
             return  "\(Router.baseUrl)monsters"
         case .races:

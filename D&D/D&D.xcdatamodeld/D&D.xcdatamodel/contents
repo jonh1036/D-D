@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="Personagem" representedClassName="Personagem" syncable="YES" codeGenerationType="class">
+        <attribute name="alinhamento" optional="YES" attributeType="String"/>
+        <attribute name="antecedente" optional="YES" attributeType="String"/>
+        <attribute name="carisma" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="classe" optional="YES" attributeType="String"/>
+        <attribute name="colete" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="constituicao" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="destreza" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="equipamentos" optional="YES" attributeType="Transformable"/>
+        <attribute name="forca" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="inteligencia" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="magias" optional="YES" attributeType="Transformable"/>
+        <attribute name="nivel" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String"/>
+        <attribute name="pericias" optional="YES" attributeType="Transformable"/>
+        <attribute name="proeficiencia" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="raca" optional="YES" attributeType="String"/>
+        <attribute name="resistencia" optional="YES" attributeType="Transformable"/>
+        <attribute name="speed" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vida" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="xp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="Personagem" positionX="-63" positionY="-18" width="128" height="343"/>
+    </elements>
 </model>

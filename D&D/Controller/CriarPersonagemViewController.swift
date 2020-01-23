@@ -13,7 +13,7 @@ struct Attribute {
     var isMultiplyValue: Bool = false
     var currentValue: String = ""
     var currentValues: [String] = []
-    var values: [String] = ["A", "B", "C"]
+    var values: [String] = []
 }
 
 class CriarPersonagemViewController: UIViewController {
@@ -21,26 +21,66 @@ class CriarPersonagemViewController: UIViewController {
     @IBOutlet weak var tableVIew: UITableView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var addImageButton: UIButton!
-    
-    var attributes = [
-        Attribute(name: "raça"),
-        Attribute(name: "classe"),
-        Attribute(name: "antecedente"),
-        Attribute(name: "tendência"),
-        Attribute(name: "pericias", isMultiplyValue: true),
-        Attribute(name: "equipamentos", isMultiplyValue: true),
-        Attribute(name: "magias", isMultiplyValue: true)] {
-        didSet {
-            tableVIew.reloadData()
-        }
-    }
+   
+    var attributes = [Attribute]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableVIew.delegate = self
         self.tableVIew.dataSource = self
+        
+        attributes = [
+           Attribute(name: "raça", values: Raca.all.map{value in value.rawValue}),
+           Attribute(name: "classe"),
+           Attribute(name: "antecedente", values: Antecedente.all.map{value in value.rawValue}),
+           Attribute(name: "tendência", values: Alinhamento.all.map{value in value.rawValue}),
+           Attribute(name: "pericias", isMultiplyValue: true),
+           Attribute(name: "equipamentos", isMultiplyValue: true),
+           Attribute(name: "magias", isMultiplyValue: true)]
+        
+        loadClasses()
+        loadEquipamentos()
+
+        tableVIew.reloadData()
     }
+    
+    func loadClasses() {
+        Router.load(path: Router.classes.endpoint) {jsonResults in
+            guard let jsonResults = jsonResults else{return}
+            
+            self.attributes[1].values = jsonResults.map {value in value.name}
+        }
+    }
+    
+    func loadMagias() {
+        Router.load(path: Router.spells.endpoint) {jsonResults in
+            guard let jsonResults = jsonResults else{return}
+            
+            self.attributes[6].values = jsonResults.map {value in value.name}
+        }
+        
+    }
+    
+    func loadPericias() {
+        let path = "\(Router.classes.endpoint)/\(attributes[1].currentValue.lowercased())"
+        
+        Router.loadGeneric(path: path, type: Class.self) { jsonResults in
+            guard let jsonResults = jsonResults else{return}
+            let values = jsonResults.proficiency_choices[0].from
+            self.attributes[4].values = values.map{value in value.name}
+        }
+    }
+    
+    func loadEquipamentos() {
+        
+        Router.load(path: Router.equipment.endpoint) { jsonResults in
+            guard let jsonResults = jsonResults else{return}
+            
+            self.attributes[5].values = jsonResults.map {value in value.name}
+        }
+    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard
@@ -100,9 +140,15 @@ extension CriarPersonagemViewController {
                 if attribute.name == updatedAttribute.name {
                     if updatedAttribute.isMultiplyValue {
                         attributes[index].currentValues = updatedAttribute.currentValues
+                       
                     } else {
                         attributes[index].currentValue = updatedAttribute.currentValue
+                        if index == 1 {
+                            loadPericias()
+                            loadMagias()
+                        }
                     }
+                    tableVIew.reloadData()
                     break
                 }
             }
