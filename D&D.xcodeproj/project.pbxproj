@@ -10,15 +10,17 @@
 		6502CBFB23D7712200A18E9B /* PersonagemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502CBFA23D7712200A18E9B /* PersonagemTableViewCell.swift */; };
 		6502CBFE23D77C2500A18E9B /* AtributoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502CBFD23D77C2500A18E9B /* AtributoTableViewCell.swift */; };
 		6522622423D881AD003B9BD7 /* PericiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522622323D881AD003B9BD7 /* PericiaTableViewCell.swift */; };
-		6522622A23D883D7003B9BD7 /* PericiasPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522622923D883D7003B9BD7 /* PericiasPersonagemViewController.swift */; };
 		6543261423D887E9009F2BF2 /* EquipamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543261323D887E9009F2BF2 /* EquipamentoTableViewCell.swift */; };
 		6543261623D889B5009F2BF2 /* MagiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543261523D889B5009F2BF2 /* MagiaTableViewCell.swift */; };
-		6543261823D889E6009F2BF2 /* MagiaPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543261723D889E6009F2BF2 /* MagiaPersonagemViewController.swift */; };
 		65465F6623D8D0A5008AC16C /* SelectAttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65465F6523D8D0A5008AC16C /* SelectAttributeViewController.swift */; };
+		65465F6823D8ED1E008AC16C /* SelectStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65465F6723D8ED1D008AC16C /* SelectStatusViewController.swift */; };
+		654EC45923DA043B0014D05E /* MySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC45823DA043B0014D05E /* MySearch.swift */; };
+		65887E6723D9BF1000FA6A16 /* ShowThingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65887E6623D9BF1000FA6A16 /* ShowThingViewController.swift */; };
+		65887E6923D9C9E200FA6A16 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65887E6823D9C9E200FA6A16 /* StatusTableViewCell.swift */; };
+		65887E6B23D9DCD800FA6A16 /* ChangeValueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65887E6A23D9DCD800FA6A16 /* ChangeValueDelegate.swift */; };
 		65EA9C3323D757B300BEC6F0 /* ListaPersonagensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3223D757B300BEC6F0 /* ListaPersonagensViewController.swift */; };
 		65EA9C3723D7586400BEC6F0 /* CriarPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3623D7586400BEC6F0 /* CriarPersonagemViewController.swift */; };
 		65EA9C3923D7588800BEC6F0 /* StatusPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3823D7588800BEC6F0 /* StatusPersonagemViewController.swift */; };
-		65EA9C3D23D758BD00BEC6F0 /* EquipamentoPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3C23D758BD00BEC6F0 /* EquipamentoPersonagemViewController.swift */; };
 		65EA9C3F23D75A8E00BEC6F0 /* PersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3E23D75A8E00BEC6F0 /* PersonagemViewController.swift */; };
 		797F3B3B23D4FE3500AF5FD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797F3B3A23D4FE3500AF5FD7 /* AppDelegate.swift */; };
 		797F3B3D23D4FE3500AF5FD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797F3B3C23D4FE3500AF5FD7 /* SceneDelegate.swift */; };
@@ -45,15 +47,17 @@
 		6502CBFA23D7712200A18E9B /* PersonagemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagemTableViewCell.swift; sourceTree = "<group>"; };
 		6502CBFD23D77C2500A18E9B /* AtributoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtributoTableViewCell.swift; sourceTree = "<group>"; };
 		6522622323D881AD003B9BD7 /* PericiaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PericiaTableViewCell.swift; sourceTree = "<group>"; };
-		6522622923D883D7003B9BD7 /* PericiasPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PericiasPersonagemViewController.swift; sourceTree = "<group>"; };
 		6543261323D887E9009F2BF2 /* EquipamentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipamentoTableViewCell.swift; sourceTree = "<group>"; };
 		6543261523D889B5009F2BF2 /* MagiaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiaTableViewCell.swift; sourceTree = "<group>"; };
-		6543261723D889E6009F2BF2 /* MagiaPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiaPersonagemViewController.swift; sourceTree = "<group>"; };
 		65465F6523D8D0A5008AC16C /* SelectAttributeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAttributeViewController.swift; sourceTree = "<group>"; };
+		65465F6723D8ED1D008AC16C /* SelectStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStatusViewController.swift; sourceTree = "<group>"; };
+		654EC45823DA043B0014D05E /* MySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySearch.swift; sourceTree = "<group>"; };
+		65887E6623D9BF1000FA6A16 /* ShowThingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowThingViewController.swift; sourceTree = "<group>"; };
+		65887E6823D9C9E200FA6A16 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
+		65887E6A23D9DCD800FA6A16 /* ChangeValueDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeValueDelegate.swift; sourceTree = "<group>"; };
 		65EA9C3223D757B300BEC6F0 /* ListaPersonagensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPersonagensViewController.swift; sourceTree = "<group>"; };
 		65EA9C3623D7586400BEC6F0 /* CriarPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarPersonagemViewController.swift; sourceTree = "<group>"; };
 		65EA9C3823D7588800BEC6F0 /* StatusPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPersonagemViewController.swift; sourceTree = "<group>"; };
-		65EA9C3C23D758BD00BEC6F0 /* EquipamentoPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipamentoPersonagemViewController.swift; sourceTree = "<group>"; };
 		65EA9C3E23D75A8E00BEC6F0 /* PersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagemViewController.swift; sourceTree = "<group>"; };
 		797F3B3723D4FE3500AF5FD7 /* D&D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D&D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		797F3B3A23D4FE3500AF5FD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,11 +108,10 @@
 				65EA9C3223D757B300BEC6F0 /* ListaPersonagensViewController.swift */,
 				65EA9C3623D7586400BEC6F0 /* CriarPersonagemViewController.swift */,
 				65EA9C3823D7588800BEC6F0 /* StatusPersonagemViewController.swift */,
-				6522622923D883D7003B9BD7 /* PericiasPersonagemViewController.swift */,
-				65EA9C3C23D758BD00BEC6F0 /* EquipamentoPersonagemViewController.swift */,
-				6543261723D889E6009F2BF2 /* MagiaPersonagemViewController.swift */,
 				65EA9C3E23D75A8E00BEC6F0 /* PersonagemViewController.swift */,
 				65465F6523D8D0A5008AC16C /* SelectAttributeViewController.swift */,
+				65465F6723D8ED1D008AC16C /* SelectStatusViewController.swift */,
+				65887E6623D9BF1000FA6A16 /* ShowThingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -147,6 +150,9 @@
 				797F3B4823D4FE3B00AF5FD7 /* Info.plist */,
 				797F3B5C23D4FE5A00AF5FD7 /* Service.swift */,
 				797F3B5E23D4FE6600AF5FD7 /* Models.swift */,
+				65887E6823D9C9E200FA6A16 /* StatusTableViewCell.swift */,
+				65887E6A23D9DCD800FA6A16 /* ChangeValueDelegate.swift */,
+				654EC45823DA043B0014D05E /* MySearch.swift */,
 			);
 			path = "D&D";
 			sourceTree = "<group>";
@@ -264,21 +270,23 @@
 				797F3B3F23D4FE3500AF5FD7 /* ViewController.swift in Sources */,
 				797F3B5D23D4FE5A00AF5FD7 /* Service.swift in Sources */,
 				65EA9C3323D757B300BEC6F0 /* ListaPersonagensViewController.swift in Sources */,
-				6522622A23D883D7003B9BD7 /* PericiasPersonagemViewController.swift in Sources */,
 				6543261423D887E9009F2BF2 /* EquipamentoTableViewCell.swift in Sources */,
-				6543261823D889E6009F2BF2 /* MagiaPersonagemViewController.swift in Sources */,
 				65EA9C3923D7588800BEC6F0 /* StatusPersonagemViewController.swift in Sources */,
 				65465F6623D8D0A5008AC16C /* SelectAttributeViewController.swift in Sources */,
 				6502CBFB23D7712200A18E9B /* PersonagemTableViewCell.swift in Sources */,
-				65EA9C3D23D758BD00BEC6F0 /* EquipamentoPersonagemViewController.swift in Sources */,
 				65EA9C3F23D75A8E00BEC6F0 /* PersonagemViewController.swift in Sources */,
+				65887E6B23D9DCD800FA6A16 /* ChangeValueDelegate.swift in Sources */,
+				65465F6823D8ED1E008AC16C /* SelectStatusViewController.swift in Sources */,
 				797F3B3B23D4FE3500AF5FD7 /* AppDelegate.swift in Sources */,
 				797F3B3D23D4FE3500AF5FD7 /* SceneDelegate.swift in Sources */,
 				6502CBFE23D77C2500A18E9B /* AtributoTableViewCell.swift in Sources */,
+				654EC45923DA043B0014D05E /* MySearch.swift in Sources */,
 				797F3B5F23D4FE6600AF5FD7 /* Models.swift in Sources */,
 				65EA9C3723D7586400BEC6F0 /* CriarPersonagemViewController.swift in Sources */,
 				6522622423D881AD003B9BD7 /* PericiaTableViewCell.swift in Sources */,
 				6543261623D889B5009F2BF2 /* MagiaTableViewCell.swift in Sources */,
+				65887E6723D9BF1000FA6A16 /* ShowThingViewController.swift in Sources */,
+				65887E6923D9C9E200FA6A16 /* StatusTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

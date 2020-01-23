@@ -10,17 +10,20 @@ import UIKit
 
 class StatusPersonagemViewController: UIViewController {
 
-    @IBOutlet weak var forcaTextField: UITextField!
-    @IBOutlet weak var destrezaTextField: UITextField!
-    @IBOutlet weak var constituicaoTextField: UITextField!
-    @IBOutlet weak var sabedoriaTextField: UITextField!
-    @IBOutlet weak var inteligenciaTextField: UITextField!
-    @IBOutlet weak var carismaTextField: UITextField!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+}
+
+
+extension StatusPersonagemViewController {
+    @IBAction func unwindWithSelected(segue: UIStoryboardSegue) {
+        if let selectAttributeController = segue.source as? SelectAttributeViewController,
+            let updatedAttribute = selectAttributeController.attribute {
+            
+        }
+    }
 }

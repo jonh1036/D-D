@@ -76,7 +76,7 @@ extension SelectAttributeViewController: UITableViewDelegate, UITableViewDataSou
             cell?.accessoryType = .checkmark
         }
 
-        if !(attribute.name == "pericias" ){
+        if !attribute.isMultiplyValue {
             self.performSegue(withIdentifier: "unwind", sender: attribute)
         }
     }

@@ -10,21 +10,22 @@ import UIKit
 
 class PersonagemViewController: UIViewController {
 
+    @IBOutlet weak var personageNameLabel: UILabel!
+    @IBOutlet weak var personageClassLabel: UILabel!
+    @IBOutlet weak var racePersonagemLabel: UILabel!
+    @IBOutlet weak var personageLevelLabel: UILabel!
+    @IBOutlet weak var personageLifeLabel: UILabel!
+    @IBOutlet weak var personageDefenseLabel: UILabel!
+    @IBOutlet weak var personageStrongLabel: UILabel!
+    @IBOutlet weak var personageDextLabel: UILabel!
+    @IBOutlet weak var personageSmartLabel: UILabel!
+    @IBOutlet weak var personageWisdomLabel: UILabel!
+    @IBOutlet weak var personageConstitutionLabel: UILabel!
+    @IBOutlet weak var personageCharismaLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
