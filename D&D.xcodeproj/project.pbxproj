@@ -7,19 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07AF23D323D8887C001C8563 /* Raca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23CC23D8887C001C8563 /* Raca.swift */; };
-		07AF23D423D8887C001C8563 /* Atributo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23CD23D8887C001C8563 /* Atributo.swift */; };
-		07AF23D523D8887C001C8563 /* Classe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23CE23D8887C001C8563 /* Classe.swift */; };
-		07AF23D623D8887C001C8563 /* Alinhamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23CF23D8887C001C8563 /* Alinhamento.swift */; };
-		07AF23D723D8887C001C8563 /* Pericias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23D023D8887C001C8563 /* Pericias.swift */; };
-		07AF23D823D8887C001C8563 /* Resistencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23D123D8887C001C8563 /* Resistencia.swift */; };
-		07AF23D923D8887C001C8563 /* Antecedente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23D223D8887C001C8563 /* Antecedente.swift */; };
 		07AF23DB23D889D5001C8563 /* Personagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23DA23D889D5001C8563 /* Personagem.swift */; };
 		07AF23DD23D889D8001C8563 /* Dado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23DC23D889D8001C8563 /* Dado.swift */; };
 		07AF23DF23D8A166001C8563 /* ClasseEspecifica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23DE23D8A166001C8563 /* ClasseEspecifica.swift */; };
 		07AF23E123D8ACEE001C8563 /* EspacosMagia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23E023D8ACEE001C8563 /* EspacosMagia.swift */; };
 		07AF23E323D8B426001C8563 /* Subclasse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23E223D8B426001C8563 /* Subclasse.swift */; };
-		07AF23E523D8DF5D001C8563 /* Subclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23E423D8DF5D001C8563 /* Subclass.swift */; };
 		07AF23E723D8ECD0001C8563 /* MagiasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23E623D8ECD0001C8563 /* MagiasModel.swift */; };
 		19045EEF23D777890072E2B7 /* SpecificRace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19045EEE23D777890072E2B7 /* SpecificRace.swift */; };
 		19045EF123D78CCE0072E2B7 /* SpecificEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19045EF023D78CCE0072E2B7 /* SpecificEquipment.swift */; };
@@ -53,20 +45,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07AF23CC23D8887C001C8563 /* Raca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Raca.swift; sourceTree = "<group>"; };
-		07AF23CD23D8887C001C8563 /* Atributo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atributo.swift; sourceTree = "<group>"; };
-		07AF23CE23D8887C001C8563 /* Classe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classe.swift; sourceTree = "<group>"; };
-		07AF23CF23D8887C001C8563 /* Alinhamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alinhamento.swift; sourceTree = "<group>"; };
-		07AF23D023D8887C001C8563 /* Pericias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pericias.swift; sourceTree = "<group>"; };
-		07AF23D123D8887C001C8563 /* Resistencia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resistencia.swift; sourceTree = "<group>"; };
-		07AF23D223D8887C001C8563 /* Antecedente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Antecedente.swift; sourceTree = "<group>"; };
 		07AF23DA23D889D5001C8563 /* Personagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personagem.swift; sourceTree = "<group>"; };
 		07AF23DC23D889D8001C8563 /* Dado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dado.swift; sourceTree = "<group>"; };
 		07AF23DE23D8A166001C8563 /* ClasseEspecifica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClasseEspecifica.swift; sourceTree = "<group>"; };
 		07AF23E023D8ACEE001C8563 /* EspacosMagia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspacosMagia.swift; sourceTree = "<group>"; };
 		07AF23E223D8B426001C8563 /* Subclasse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subclasse.swift; sourceTree = "<group>"; };
-		07AF23E423D8DF5D001C8563 /* Subclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subclass.swift; sourceTree = "<group>"; };
 		07AF23E623D8ECD0001C8563 /* MagiasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiasModel.swift; sourceTree = "<group>"; };
+		07AF23EA23D9E8D2001C8563 /* Raca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raca.swift; sourceTree = "<group>"; };
+		07AF23EB23D9E8D2001C8563 /* Atributo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atributo.swift; sourceTree = "<group>"; };
+		07AF23EC23D9E8D2001C8563 /* Subclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subclass.swift; sourceTree = "<group>"; };
+		07AF23ED23D9E8D2001C8563 /* Classe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classe.swift; sourceTree = "<group>"; };
+		07AF23EE23D9E8D2001C8563 /* Alinhamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alinhamento.swift; sourceTree = "<group>"; };
+		07AF23EF23D9E8D2001C8563 /* Pericias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pericias.swift; sourceTree = "<group>"; };
+		07AF23F023D9E8D2001C8563 /* Resistencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resistencia.swift; sourceTree = "<group>"; };
+		07AF23F123D9E8D2001C8563 /* Antecedente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Antecedente.swift; sourceTree = "<group>"; };
 		19045EEE23D777890072E2B7 /* SpecificRace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificRace.swift; sourceTree = "<group>"; };
 		19045EF023D78CCE0072E2B7 /* SpecificEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificEquipment.swift; sourceTree = "<group>"; };
 		19045EF223D7910F0072E2B7 /* SpecificSpell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificSpell.swift; sourceTree = "<group>"; };
@@ -110,20 +102,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07AF23CB23D8887C001C8563 /* enuns */ = {
+		07AF23E923D9E8D2001C8563 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				07AF23CC23D8887C001C8563 /* Raca.swift */,
-				07AF23CD23D8887C001C8563 /* Atributo.swift */,
-				07AF23CE23D8887C001C8563 /* Classe.swift */,
-				07AF23CF23D8887C001C8563 /* Alinhamento.swift */,
-				07AF23D023D8887C001C8563 /* Pericias.swift */,
-				07AF23D123D8887C001C8563 /* Resistencia.swift */,
-				07AF23D223D8887C001C8563 /* Antecedente.swift */,
-				07AF23E423D8DF5D001C8563 /* Subclass.swift */,
+				07AF23EA23D9E8D2001C8563 /* Raca.swift */,
+				07AF23EB23D9E8D2001C8563 /* Atributo.swift */,
+				07AF23EC23D9E8D2001C8563 /* Subclass.swift */,
+				07AF23ED23D9E8D2001C8563 /* Classe.swift */,
+				07AF23EE23D9E8D2001C8563 /* Alinhamento.swift */,
+				07AF23EF23D9E8D2001C8563 /* Pericias.swift */,
+				07AF23F023D9E8D2001C8563 /* Resistencia.swift */,
+				07AF23F123D9E8D2001C8563 /* Antecedente.swift */,
 			);
-			name = enuns;
-			path = "../../../Downloads/RPG2 (1)/enuns";
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		195E13CC23D623730070B5AB /* Models */ = {
@@ -171,7 +162,7 @@
 		797F3B3923D4FE3500AF5FD7 /* D&D */ = {
 			isa = PBXGroup;
 			children = (
-				07AF23CB23D8887C001C8563 /* enuns */,
+				07AF23E923D9E8D2001C8563 /* Enums */,
 				195E13CC23D623730070B5AB /* Models */,
 				797F3B3A23D4FE3500AF5FD7 /* AppDelegate.swift */,
 				797F3B3C23D4FE3500AF5FD7 /* SceneDelegate.swift */,
@@ -299,20 +290,13 @@
 				19045EEF23D777890072E2B7 /* SpecificRace.swift in Sources */,
 				07AF23DF23D8A166001C8563 /* ClasseEspecifica.swift in Sources */,
 				19045EF123D78CCE0072E2B7 /* SpecificEquipment.swift in Sources */,
-				07AF23D823D8887C001C8563 /* Resistencia.swift in Sources */,
-				07AF23D323D8887C001C8563 /* Raca.swift in Sources */,
 				07AF23DB23D889D5001C8563 /* Personagem.swift in Sources */,
 				195E13D423D628E40070B5AB /* Races.swift in Sources */,
 				195E13D623D629A30070B5AB /* Skills.swift in Sources */,
-				07AF23D723D8887C001C8563 /* Pericias.swift in Sources */,
 				07AF23E323D8B426001C8563 /* Subclasse.swift in Sources */,
-				07AF23D623D8887C001C8563 /* Alinhamento.swift in Sources */,
-				07AF23D423D8887C001C8563 /* Atributo.swift in Sources */,
 				195E13DE23D648C50070B5AB /* APIClasses.swift in Sources */,
-				07AF23D923D8887C001C8563 /* Antecedente.swift in Sources */,
 				07AF23E123D8ACEE001C8563 /* EspacosMagia.swift in Sources */,
 				195E13D223D627BC0070B5AB /* Class.swift in Sources */,
-				07AF23E523D8DF5D001C8563 /* Subclass.swift in Sources */,
 				797F3B3F23D4FE3500AF5FD7 /* ViewController.swift in Sources */,
 				797F3B5D23D4FE5A00AF5FD7 /* Service.swift in Sources */,
 				797F3B3B23D4FE3500AF5FD7 /* AppDelegate.swift in Sources */,
@@ -320,7 +304,6 @@
 				195E13DC23D647F40070B5AB /* RootStruct.swift in Sources */,
 				797F3B5F23D4FE6600AF5FD7 /* Models.swift in Sources */,
 				195E13DA23D62AC10070B5AB /* StartingProficiencies.swift in Sources */,
-				07AF23D523D8887C001C8563 /* Classe.swift in Sources */,
 				19045EF323D7910F0072E2B7 /* SpecificSpell.swift in Sources */,
 				07AF23E723D8ECD0001C8563 /* MagiasModel.swift in Sources */,
 				07AF23DD23D889D8001C8563 /* Dado.swift in Sources */,
