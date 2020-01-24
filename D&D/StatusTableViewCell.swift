@@ -43,11 +43,20 @@ class StatusTableViewCell: UITableViewCell, UIPickerViewDataSource, UIPickerView
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        currentValue = pickerData[row]
-        textField.text = currentValue
+        if !string.contains( String(pickerData[row]) ){ //Verify if pickerData[row] -> String
+            currentValue = pickerData[row]
+            textField.text = currentValue
         
-        attribute.currentValue = currentValue
-        changeValueDelegate.changeValue(for: attribute)
+            attribute.currentValue = currentValue
+            changeValueDelegate.changeValue(for: attribute) 
+        }
+        else{
+            let alert = UIAlertView()
+            alert.title = "Valores repetidos"
+            alert.message = "Selecione valores diferente para continuar"
+            alert.addButtonWithTitle("Ok")
+            alert.show()
+        }
     }
     
     
