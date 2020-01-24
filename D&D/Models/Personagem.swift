@@ -1,5 +1,4 @@
 //MARK: - Caracteristicas gerais
-
 class Personagem{
     var nome:String = ""
     var alinhamento: Alinhamento = .CaoticoBom

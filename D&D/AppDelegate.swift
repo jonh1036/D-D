@@ -5,7 +5,6 @@
 //  Created by Jonathan Silva on 19/01/20.
 //  Copyright © 2020  Jonathan Silva. All rights reserved.
 //
-
 import UIKit
 import CoreData
 
@@ -20,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // MARK: UISceneSession Lifecycle
-
     @available(iOS 13.0, *)
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
@@ -40,7 +38,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 // MARK: - Core Data stack
-
 var persistentContainer: NSPersistentContainer = {
     let container = NSPersistentContainer(name: "D&D")
     container.loadPersistentStores(completionHandler: { (storeDescription, error) in
@@ -52,7 +49,6 @@ var persistentContainer: NSPersistentContainer = {
 }()
 
 // MARK: - Core Data Saving support
-
 func saveContext () {
     let context = persistentContainer.viewContext
     if context.hasChanges {
