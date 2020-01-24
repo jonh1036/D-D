@@ -10,7 +10,7 @@ enum Raca: String {
     case Draconato = "Draconato"
     case GnomoFloresta = "Gnomo daFloresta"
     case GnomoRocha = "Gnomo da Rocha"
-    case MeioElfo = "Meio Rocha"
+    case MeioElfo = "Meio Elfo"
     case MeioOrc = "Meio Orc"
     case Tielfing = "Tielfing"
     

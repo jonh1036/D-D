@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 class ListaPersonagensViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
 
-    let personagens: [String] = ["Rogerinho", "Diego"]
+ 
+    var personagensHere: [(nome: String, classe: String, raca: String, all: NSManagedObject)] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +38,43 @@ class ListaPersonagensViewController: UIViewController, UITableViewDelegate, UIT
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let dataManager: DataManager = DataManager()
+        let result = dataManager.retriveAllPersonagens()
+        
+        if let allPersonagens = result {
+            
+            personagensHere.removeAll()
+            
+            for r in allPersonagens {
+                var novo: (nome: String, classe: String, raca: String, all: NSManagedObject)
+                novo.nome = r.value(forKey: "nome") as! String
+                novo.classe = r.value(forKey: "classe") as! String
+                novo.raca = r.value(forKey: "raca") as! String
+                novo.all = r
+                personagensHere.append(novo)
+            }
+        }
+        
+        self.tableView.reloadData()
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard
+            segue.identifier == "PersonagemSegue",
+            let indePath = tableView.indexPathForSelectedRow,
+            let personagemController = segue.destination as? PersonagemViewController else {
+                return
+        }
+        
+        let personagemSelecionado = personagensHere[indePath.row]
+        personagemController.personagem = personagemSelecionado.all
+    }
 
     // MARK: - Table view data source
 
@@ -46,14 +85,20 @@ class ListaPersonagensViewController: UIViewController, UITableViewDelegate, UIT
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return personagens.count
+        return personagensHere.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "PersonagensCell", for: indexPath) as! PersonagemTableViewCell
         
-        cell.nomePersonagem.text = personagens[indexPath.row]
+        //cell.nomePersonagem.text = personagensList[indexPath.row].nome
+        //cell.classeLabel.text = personagensList[indexPath.row].classe.rawValue
+        //cell.racaLabel.text = personagensList[indexPath.row].raca.rawValue
+        
+        cell.nomePersonagem.text = personagensHere[indexPath.row].nome
+        cell.classeLabel.text = personagensHere[indexPath.row].classe
+        cell.racaLabel.text = personagensHere[indexPath.row].raca
         
         return cell
     }

@@ -90,6 +90,11 @@ class CriarPersonagemViewController: UIViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "status" {
+            let statusController = segue.destination as? SelectStatusViewController
+            statusController?.personagem = personagem
+        }
+        
         guard
             segue.identifier == "SelectAttributeSegue",
             let indePath = tableVIew.indexPathForSelectedRow,
@@ -99,8 +104,6 @@ class CriarPersonagemViewController: UIViewController {
         
         let selectedAttribute = attributes[indePath.row]
         selectAttributeController.attribute = selectedAttribute
-        
-        
     
 //MARK: - enviar personagem
 //        guard
@@ -173,9 +176,20 @@ extension CriarPersonagemViewController {
     }
     
     func isValoresVazios() -> Bool {
-        return false
+        return personagem.nome.isEmpty || personagem.raca.isEmpty || personagem.classe.isEmpty || personagem.antecedente.isEmpty || personagem.alinhamento.isEmpty || personagem.pericias.count == 0 || personagem.equipamentos.count == 0 || personagem.magias.count == 0
     }
+
     @IBAction func savePersonagem() {
+        
+        personagem.nome = nameTextField.text!
+        
+        personagem.classe = attributes[1].currentValue
+        personagem.raca = attributes[0].currentValue
+        personagem.antecedente = attributes[2].currentValue
+        personagem.alinhamento = attributes[3].currentValue
+        personagem.pericias = attributes[4].currentValues
+        personagem.equipamentos = attributes[5].currentValues
+        personagem.magias = attributes[6].currentValues
         
         if isValoresVazios() {
             let actionAlert = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -183,20 +197,8 @@ extension CriarPersonagemViewController {
             
             present(valoresVaziosAlert, animated: true, completion: nil)
         } else {
-            self.performSegue(withIdentifier: "status", sender: nil)
+            self.performSegue(withIdentifier: "status", sender: personagem)
         }
-        
-        personagem.nome = nameTextField.text!
-        
-        personagem.classe = attributes[1].name
-        personagem.raca = attributes[0].name
-        personagem.antecedente = attributes[2].name
-        personagem.alinhamento = attributes[3].name
-        personagem.pericias = attributes[4].currentValues
-        personagem.equipamentos = attributes[5].currentValues
-        personagem.magias = attributes[6].currentValues
-        
-        
-        
+
     }
 }
