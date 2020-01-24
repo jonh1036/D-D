@@ -28,6 +28,24 @@ class PersonagemViewController: UIViewController {
     var personagem: NSManagedObject!
     
     override func viewDidLoad() {
+        
+        
+        var personagemExibivel:Personagem = Personagem()
+        
+        
+        
+        
+        guard let forca = personagem.value(forKey: "forca") as? Int else {return}
+        guard let destreza = personagem.value(forKey: "destreza") as? Int else {return}
+        guard let inteligenica = personagem.value(forKey: "inteligencia") as? Int else {return}
+        guard let sabedoria = personagem.value(forKey: "sabedoria") as? Int else {return}
+        guard let constituicao = personagem.value(forKey: "constituicao") as? Int else {return}
+        guard let carisma = personagem.value(forKey: "carisma") as? Int else {return}
+        
+        personagemExibivel.setStatus(forca: forca, destreza: destreza, sabedoria: sabedoria, inteligencia: inteligenica, carisma: carisma, constituicao: constituicao)
+        guard let racas:String = (personagem.value(forKey: "raca") as? String) else {return}
+        personagemExibivel.setRaca(raca: racas)
+        
         super.viewDidLoad()
         
         self.personageNameLabel.text = (personagem.value(forKey: "nome") as! String)
@@ -36,12 +54,12 @@ class PersonagemViewController: UIViewController {
         self.personageLifeLabel.text = "10" //(personagem.value(forKey: "vida") as! String)
         self.personageDefenseLabel.text = "10" //(personagem.value(forKey: "colete") as! String)
         
-        self.personageStrongLabel.text = String(personagem.value(forKey: "forca") as! Int32)
-        self.personageDextLabel.text = String(personagem.value(forKey: "destreza") as! Int32)
-        self.personageSmartLabel.text = String(personagem.value(forKey: "inteligencia") as! Int32)
-        self.personageWisdomLabel.text = String(personagem.value(forKey: "sabedoria") as! Int32)
-        self.personageConstitutionLabel.text = String(personagem.value(forKey: "constituicao") as! Int32)
-        self.personageCharismaLabel.text = String(personagem.value(forKey: "carisma") as! Int32)
+        self.personageStrongLabel.text = String(personagemExibivel.status.forca)
+        self.personageDextLabel.text = String(personagemExibivel.status.destreza)
+        self.personageSmartLabel.text = String(personagemExibivel.status.inteligencia)
+        self.personageWisdomLabel.text = String(personagemExibivel.status.sabedoria)
+        self.personageConstitutionLabel.text = String(personagemExibivel.status.constituicao)
+        self.personageCharismaLabel.text = String(personagemExibivel.status.carisma)
     }
 
 }

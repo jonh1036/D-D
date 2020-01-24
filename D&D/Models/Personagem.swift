@@ -175,21 +175,21 @@ class Personagem{
     
     //MARK: - Adcionar Bonus de Raça
     
-    func setBonusRaca(magias:[String]?){
+    func setRaca(raca:String){
         switch raca{
-            case Raca.AnaoMontanha:
+        case Raca.AnaoMontanha.rawValue:
                 self.status.forca += 2
                 self.status.constituicao += 2
                 self.status.deslocamento = 7.5
                 
-            case Raca.AnaoColina:
+            case Raca.AnaoColina.rawValue:
                 self.status.sabedoria += 1
                 self.status.constituicao += 2
                 self.status.deslocamento = 7.5
                 self.status.vidaMax += 1
                 self.status.vida += 1
                 
-            case Raca.ElfoAlto:
+            case Raca.ElfoAlto.rawValue:
                 self.status.destreza += 2
                 self.status.deslocamento = 9
                 self.testePericias.percepcao = true
@@ -201,7 +201,7 @@ class Personagem{
                 }
                 
                 //Adcionar truque a proxima função
-            case Raca.ElfoFloresta:
+            case Raca.ElfoFloresta.rawValue:
                 self.status.destreza += 2
                 self.status.deslocamento = 9
                 self.testePericias.percepcao = true
@@ -211,7 +211,7 @@ class Personagem{
                 self.proeficiencias += ["Espada Longa","Espada Curta","Arco Curto","Arco Longo"]
                 
                 
-            case Raca.ElfoNegro:
+            case Raca.ElfoNegro.rawValue:
                 self.status.destreza += 2
                 self.status.deslocamento = 9
                 self.testePericias.percepcao = true
@@ -221,20 +221,20 @@ class Personagem{
                 
                 // Adicionar magias no level UP
                 
-            case Raca.HalflingLeve:
+            case Raca.HalflingLeve.rawValue:
                 self.status.destreza += 2
                 self.status.deslocamento = 7.5
                 self.status.carisma += 1
                 self.traits += ["Naturally Stealthy"]
                 
                 
-            case Raca.HalflingRobusto:
+            case Raca.HalflingRobusto.rawValue:
                 self.status.destreza += 2
                 self.status.deslocamento = 7.5
                 self.status.constituicao += 1
                 self.traits += ["South Resilience"]
                 
-            case Raca.Humano:
+            case Raca.Humano.rawValue:
                 self.status.forca += 1
                 self.status.destreza += 1
                 self.status.carisma += 1
@@ -243,36 +243,38 @@ class Personagem{
                 self.status.inteligencia += 1
                 self.status.deslocamento = 9
                 
-            case Raca.Draconato:
+            case Raca.Draconato.rawValue:
                 self.status.forca += 2
                 self.status.carisma += 1
                 self.status.deslocamento = 9
                 
-            case Raca.GnomoFloresta:
+            case Raca.GnomoFloresta.rawValue:
                 self.status.inteligencia += 2
                 self.status.deslocamento = 7.5
                 self.status.destreza += 1
                 self.traits += ["Natural illusionnist","Speak With Small Beasts"]
                 
-            case Raca.GnomoRocha:
+            case Raca.GnomoRocha.rawValue:
                 self.status.inteligencia += 2
                 self.status.deslocamento = 7.5
                 self.status.constituicao += 1
                 self.traits += ["Artficer's Lore","Tinker"]
                 
-            case Raca.MeioElfo:
+            case Raca.MeioElfo.rawValue:
                 self.status.carisma += 2
                 self.freePoints += 2
                 self.freeSkill += 2
                 
-            case Raca.MeioOrc:
+            case Raca.MeioOrc.rawValue:
                 self.status.forca += 2
                 self.status.constituicao += 2
                 self.testePericias.intimidacao = true
                 
-            case Raca.Tielfing:
+            case Raca.Tielfing.rawValue:
                 self.status.carisma += 2
                 self.status.inteligencia += 2
+        default:
+            return 
         }
     }
     
@@ -344,13 +346,27 @@ class Personagem{
         }
     }
     //MARK: - SetPersonagem (2)
-    func setPersonagem(status:Status,traits:[String],magias:[String]?,classeJson:Class,classeBonusLevelJson:ClasseEspecifica){
+    func setPersonagem(status:Status,classeJson:Class,classeBonusLevelJson:ClasseEspecifica){
         self.setPersonagem(status: status)
         self.setBonusClasse(classeBonusLevelJson: classeBonusLevelJson)
         self.setPericias(classeJson: classeJson)
         self.setResistencias(classeJson: classeJson)
-        self.setBonusRaca(magias: magias)
-        self.traits += traits
+//        self.setBonusRaca(magias: magias)
+//        self.traits += traits
         self.setMagias(magias: magias)
     }
+    
+    func setStatus(forca:Int,destreza:Int,sabedoria:Int,inteligencia:Int,carisma:Int,constituicao:Int) -> Status{
+        var status:Status = Status()
+        status.forca = forca
+        status.destreza = destreza
+        status.inteligencia = inteligencia
+        status.sabedoria = sabedoria
+        status.carisma = carisma
+        status.constituicao = constituicao
+        self.status = status
+        return status
+    }
+    
+
 }
