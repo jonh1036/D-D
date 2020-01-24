@@ -7,33 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07033DFB23D9F86D00A38CFF /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07033DFA23D9F86D00A38CFF /* Status.swift */; };
-		07033DFD23D9F9B900A38CFF /* Resistencias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07033DFC23D9F9B900A38CFF /* Resistencias.swift */; };
-		07033DFF23D9FAAE00A38CFF /* TestePericias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07033DFE23D9FAAE00A38CFF /* TestePericias.swift */; };
-		07AF23DB23D889D5001C8563 /* Personagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23DA23D889D5001C8563 /* Personagem.swift */; };
-		07AF23DD23D889D8001C8563 /* Dado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23DC23D889D8001C8563 /* Dado.swift */; };
-		07AF23DF23D8A166001C8563 /* ClasseEspecifica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23DE23D8A166001C8563 /* ClasseEspecifica.swift */; };
-		07AF23E723D8ECD0001C8563 /* MagiasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF23E623D8ECD0001C8563 /* MagiasModel.swift */; };
-		07ECDB2B23DA0C75004744A9 /* EspacoMagia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ECDB2A23DA0C75004744A9 /* EspacoMagia.swift */; };
-		19045EEF23D777890072E2B7 /* SpecificRace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19045EEE23D777890072E2B7 /* SpecificRace.swift */; };
-		19045EF123D78CCE0072E2B7 /* SpecificEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19045EF023D78CCE0072E2B7 /* SpecificEquipment.swift */; };
-		19045EF323D7910F0072E2B7 /* SpecificSpell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19045EF223D7910F0072E2B7 /* SpecificSpell.swift */; };
-		1943984123D9EAB600E54FE5 /* Alinhamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943984023D9EAB600E54FE5 /* Alinhamento.swift */; };
-		1943984323D9EB0D00E54FE5 /* Classe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943984223D9EB0D00E54FE5 /* Classe.swift */; };
-		1943984523D9EB3C00E54FE5 /* Raca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943984423D9EB3C00E54FE5 /* Raca.swift */; };
-		1943984723D9EB6A00E54FE5 /* Atributo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943984623D9EB6A00E54FE5 /* Atributo.swift */; };
-		1943984923D9EB8B00E54FE5 /* SubClasse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943984823D9EB8B00E54FE5 /* SubClasse.swift */; };
-		1943984B23D9EBAD00E54FE5 /* Pericias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943984A23D9EBAD00E54FE5 /* Pericias.swift */; };
-		1943984D23D9EBE100E54FE5 /* Resistencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943984C23D9EBE100E54FE5 /* Resistencia.swift */; };
-		1943984F23D9EBFA00E54FE5 /* Antecedente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943984E23D9EBFA00E54FE5 /* Antecedente.swift */; };
-		195E13D223D627BC0070B5AB /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13D123D627BC0070B5AB /* Class.swift */; };
-		195E13D423D628E40070B5AB /* Races.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13D323D628E40070B5AB /* Races.swift */; };
-		195E13D623D629A30070B5AB /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13D523D629A30070B5AB /* Skills.swift */; };
-		195E13D823D62A000070B5AB /* AbilityBonuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13D723D62A000070B5AB /* AbilityBonuses.swift */; };
-		195E13DA23D62AC10070B5AB /* StartingProficiencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13D923D62AC00070B5AB /* StartingProficiencies.swift */; };
-		195E13DC23D647F40070B5AB /* RootStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13DB23D647F40070B5AB /* RootStruct.swift */; };
-		195E13DE23D648C50070B5AB /* APIClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E13DD23D648C50070B5AB /* APIClasses.swift */; };
-		19AEA2BF23DA109500BD65A3 /* D&D.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19AEA2BD23DA109500BD65A3 /* D&D.xcdatamodeld */; };
+		6502CBFB23D7712200A18E9B /* PersonagemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502CBFA23D7712200A18E9B /* PersonagemTableViewCell.swift */; };
+		6502CBFE23D77C2500A18E9B /* AtributoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502CBFD23D77C2500A18E9B /* AtributoTableViewCell.swift */; };
+		6522622423D881AD003B9BD7 /* PericiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522622323D881AD003B9BD7 /* PericiaTableViewCell.swift */; };
+		6543261423D887E9009F2BF2 /* EquipamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543261323D887E9009F2BF2 /* EquipamentoTableViewCell.swift */; };
+		6543261623D889B5009F2BF2 /* MagiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543261523D889B5009F2BF2 /* MagiaTableViewCell.swift */; };
+		65465F6623D8D0A5008AC16C /* SelectAttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65465F6523D8D0A5008AC16C /* SelectAttributeViewController.swift */; };
+		65465F6823D8ED1E008AC16C /* SelectStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65465F6723D8ED1D008AC16C /* SelectStatusViewController.swift */; };
+		654EC45923DA043B0014D05E /* MySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC45823DA043B0014D05E /* MySearch.swift */; };
+		654EC46323DA1DB90014D05E /* Alinhamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC45B23DA1DB80014D05E /* Alinhamento.swift */; };
+		654EC46423DA1DB90014D05E /* Atributo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC45C23DA1DB80014D05E /* Atributo.swift */; };
+		654EC46523DA1DB90014D05E /* SubClasse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC45D23DA1DB80014D05E /* SubClasse.swift */; };
+		654EC46623DA1DB90014D05E /* Antecedente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC45E23DA1DB80014D05E /* Antecedente.swift */; };
+		654EC46723DA1DB90014D05E /* Pericias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC45F23DA1DB80014D05E /* Pericias.swift */; };
+		654EC46823DA1DB90014D05E /* Resistencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC46023DA1DB80014D05E /* Resistencia.swift */; };
+		654EC46923DA1DB90014D05E /* Raca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC46123DA1DB80014D05E /* Raca.swift */; };
+		654EC46A23DA1DB90014D05E /* Classe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC46223DA1DB90014D05E /* Classe.swift */; };
+		654EC47C23DA1E370014D05E /* SpecificSpell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC46E23DA1E350014D05E /* SpecificSpell.swift */; };
+		654EC47D23DA1E370014D05E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC46F23DA1E350014D05E /* Models.swift */; };
+		654EC47E23DA1E370014D05E /* AbilityBonuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC47023DA1E360014D05E /* AbilityBonuses.swift */; };
+		654EC47F23DA1E370014D05E /* SpecificEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC47123DA1E360014D05E /* SpecificEquipment.swift */; };
+		654EC48023DA1E370014D05E /* APIClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC47223DA1E360014D05E /* APIClasses.swift */; };
+		654EC48123DA1E370014D05E /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC47323DA1E360014D05E /* Skills.swift */; };
+		654EC48223DA1E370014D05E /* MagiasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC47423DA1E360014D05E /* MagiasModel.swift */; };
+		654EC48323DA1E370014D05E /* ClasseEspecifica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC47523DA1E360014D05E /* ClasseEspecifica.swift */; };
+		654EC48423DA1E370014D05E /* RootStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC47623DA1E360014D05E /* RootStruct.swift */; };
+		654EC48523DA1E370014D05E /* SpecificRace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC47723DA1E360014D05E /* SpecificRace.swift */; };
+		654EC48623DA1E370014D05E /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC47823DA1E370014D05E /* Class.swift */; };
+		654EC48723DA1E370014D05E /* Races.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC47923DA1E370014D05E /* Races.swift */; };
+		654EC48823DA1E370014D05E /* StartingProficiencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC47A23DA1E370014D05E /* StartingProficiencies.swift */; };
+		654EC48923DA1E370014D05E /* EspacoMagia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC47B23DA1E370014D05E /* EspacoMagia.swift */; };
+		654EC49223DA1EAD0014D05E /* TestePericias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC48D23DA1EAD0014D05E /* TestePericias.swift */; };
+		654EC49323DA1EAD0014D05E /* Resistencias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC48E23DA1EAD0014D05E /* Resistencias.swift */; };
+		654EC49423DA1EAD0014D05E /* Personagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC48F23DA1EAD0014D05E /* Personagem.swift */; };
+		654EC49523DA1EAD0014D05E /* Dado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC49023DA1EAD0014D05E /* Dado.swift */; };
+		654EC49623DA1EAD0014D05E /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EC49123DA1EAD0014D05E /* Status.swift */; };
+		654EC49923DA1F910014D05E /* D&D.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 654EC49723DA1F910014D05E /* D&D.xcdatamodeld */; };
+		65887E6723D9BF1000FA6A16 /* ShowThingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65887E6623D9BF1000FA6A16 /* ShowThingViewController.swift */; };
+		65887E6923D9C9E200FA6A16 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65887E6823D9C9E200FA6A16 /* StatusTableViewCell.swift */; };
+		65887E6B23D9DCD800FA6A16 /* ChangeValueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65887E6A23D9DCD800FA6A16 /* ChangeValueDelegate.swift */; };
+		65EA9C3323D757B300BEC6F0 /* ListaPersonagensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3223D757B300BEC6F0 /* ListaPersonagensViewController.swift */; };
+		65EA9C3723D7586400BEC6F0 /* CriarPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3623D7586400BEC6F0 /* CriarPersonagemViewController.swift */; };
+		65EA9C3923D7588800BEC6F0 /* StatusPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3823D7588800BEC6F0 /* StatusPersonagemViewController.swift */; };
+		65EA9C3F23D75A8E00BEC6F0 /* PersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3E23D75A8E00BEC6F0 /* PersonagemViewController.swift */; };
 		797F3B3B23D4FE3500AF5FD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797F3B3A23D4FE3500AF5FD7 /* AppDelegate.swift */; };
 		797F3B3D23D4FE3500AF5FD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797F3B3C23D4FE3500AF5FD7 /* SceneDelegate.swift */; };
 		797F3B3F23D4FE3500AF5FD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797F3B3E23D4FE3500AF5FD7 /* ViewController.swift */; };
@@ -42,7 +58,6 @@
 		797F3B4723D4FE3B00AF5FD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797F3B4523D4FE3B00AF5FD7 /* LaunchScreen.storyboard */; };
 		797F3B5223D4FE3B00AF5FD7 /* D_DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797F3B5123D4FE3B00AF5FD7 /* D_DTests.swift */; };
 		797F3B5D23D4FE5A00AF5FD7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797F3B5C23D4FE5A00AF5FD7 /* Service.swift */; };
-		797F3B5F23D4FE6600AF5FD7 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797F3B5E23D4FE6600AF5FD7 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,33 +71,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07033DFA23D9F86D00A38CFF /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
-		07033DFC23D9F9B900A38CFF /* Resistencias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resistencias.swift; sourceTree = "<group>"; };
-		07033DFE23D9FAAE00A38CFF /* TestePericias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestePericias.swift; sourceTree = "<group>"; };
-		07AF23DA23D889D5001C8563 /* Personagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personagem.swift; sourceTree = "<group>"; };
-		07AF23DC23D889D8001C8563 /* Dado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dado.swift; sourceTree = "<group>"; };
-		07AF23DE23D8A166001C8563 /* ClasseEspecifica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClasseEspecifica.swift; sourceTree = "<group>"; };
-		07AF23E623D8ECD0001C8563 /* MagiasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiasModel.swift; sourceTree = "<group>"; };
-		07ECDB2A23DA0C75004744A9 /* EspacoMagia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspacoMagia.swift; sourceTree = "<group>"; };
-		19045EEE23D777890072E2B7 /* SpecificRace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificRace.swift; sourceTree = "<group>"; };
-		19045EF023D78CCE0072E2B7 /* SpecificEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificEquipment.swift; sourceTree = "<group>"; };
-		19045EF223D7910F0072E2B7 /* SpecificSpell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificSpell.swift; sourceTree = "<group>"; };
-		1943984023D9EAB600E54FE5 /* Alinhamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alinhamento.swift; sourceTree = "<group>"; };
-		1943984223D9EB0D00E54FE5 /* Classe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classe.swift; sourceTree = "<group>"; };
-		1943984423D9EB3C00E54FE5 /* Raca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raca.swift; sourceTree = "<group>"; };
-		1943984623D9EB6A00E54FE5 /* Atributo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atributo.swift; sourceTree = "<group>"; };
-		1943984823D9EB8B00E54FE5 /* SubClasse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubClasse.swift; sourceTree = "<group>"; };
-		1943984A23D9EBAD00E54FE5 /* Pericias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pericias.swift; sourceTree = "<group>"; };
-		1943984C23D9EBE100E54FE5 /* Resistencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resistencia.swift; sourceTree = "<group>"; };
-		1943984E23D9EBFA00E54FE5 /* Antecedente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Antecedente.swift; sourceTree = "<group>"; };
-		195E13D123D627BC0070B5AB /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
-		195E13D323D628E40070B5AB /* Races.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Races.swift; sourceTree = "<group>"; };
-		195E13D523D629A30070B5AB /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
-		195E13D723D62A000070B5AB /* AbilityBonuses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityBonuses.swift; sourceTree = "<group>"; };
-		195E13D923D62AC00070B5AB /* StartingProficiencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingProficiencies.swift; sourceTree = "<group>"; };
-		195E13DB23D647F40070B5AB /* RootStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootStruct.swift; sourceTree = "<group>"; };
-		195E13DD23D648C50070B5AB /* APIClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClasses.swift; sourceTree = "<group>"; };
-		19AEA2BE23DA109500BD65A3 /* D&D.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "D&D.xcdatamodel"; sourceTree = "<group>"; };
+		6502CBFA23D7712200A18E9B /* PersonagemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagemTableViewCell.swift; sourceTree = "<group>"; };
+		6502CBFD23D77C2500A18E9B /* AtributoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtributoTableViewCell.swift; sourceTree = "<group>"; };
+		6522622323D881AD003B9BD7 /* PericiaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PericiaTableViewCell.swift; sourceTree = "<group>"; };
+		6543261323D887E9009F2BF2 /* EquipamentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipamentoTableViewCell.swift; sourceTree = "<group>"; };
+		6543261523D889B5009F2BF2 /* MagiaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiaTableViewCell.swift; sourceTree = "<group>"; };
+		65465F6523D8D0A5008AC16C /* SelectAttributeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAttributeViewController.swift; sourceTree = "<group>"; };
+		65465F6723D8ED1D008AC16C /* SelectStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStatusViewController.swift; sourceTree = "<group>"; };
+		654EC45823DA043B0014D05E /* MySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySearch.swift; sourceTree = "<group>"; };
+		654EC45B23DA1DB80014D05E /* Alinhamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alinhamento.swift; sourceTree = "<group>"; };
+		654EC45C23DA1DB80014D05E /* Atributo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atributo.swift; sourceTree = "<group>"; };
+		654EC45D23DA1DB80014D05E /* SubClasse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubClasse.swift; sourceTree = "<group>"; };
+		654EC45E23DA1DB80014D05E /* Antecedente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Antecedente.swift; sourceTree = "<group>"; };
+		654EC45F23DA1DB80014D05E /* Pericias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pericias.swift; sourceTree = "<group>"; };
+		654EC46023DA1DB80014D05E /* Resistencia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resistencia.swift; sourceTree = "<group>"; };
+		654EC46123DA1DB80014D05E /* Raca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Raca.swift; sourceTree = "<group>"; };
+		654EC46223DA1DB90014D05E /* Classe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classe.swift; sourceTree = "<group>"; };
+		654EC46E23DA1E350014D05E /* SpecificSpell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificSpell.swift; sourceTree = "<group>"; };
+		654EC46F23DA1E350014D05E /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		654EC47023DA1E360014D05E /* AbilityBonuses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbilityBonuses.swift; sourceTree = "<group>"; };
+		654EC47123DA1E360014D05E /* SpecificEquipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificEquipment.swift; sourceTree = "<group>"; };
+		654EC47223DA1E360014D05E /* APIClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClasses.swift; sourceTree = "<group>"; };
+		654EC47323DA1E360014D05E /* Skills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
+		654EC47423DA1E360014D05E /* MagiasModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiasModel.swift; sourceTree = "<group>"; };
+		654EC47523DA1E360014D05E /* ClasseEspecifica.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClasseEspecifica.swift; sourceTree = "<group>"; };
+		654EC47623DA1E360014D05E /* RootStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootStruct.swift; sourceTree = "<group>"; };
+		654EC47723DA1E360014D05E /* SpecificRace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificRace.swift; sourceTree = "<group>"; };
+		654EC47823DA1E370014D05E /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		654EC47923DA1E370014D05E /* Races.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Races.swift; sourceTree = "<group>"; };
+		654EC47A23DA1E370014D05E /* StartingProficiencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingProficiencies.swift; sourceTree = "<group>"; };
+		654EC47B23DA1E370014D05E /* EspacoMagia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EspacoMagia.swift; sourceTree = "<group>"; };
+		654EC48D23DA1EAD0014D05E /* TestePericias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestePericias.swift; sourceTree = "<group>"; };
+		654EC48E23DA1EAD0014D05E /* Resistencias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resistencias.swift; sourceTree = "<group>"; };
+		654EC48F23DA1EAD0014D05E /* Personagem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Personagem.swift; sourceTree = "<group>"; };
+		654EC49023DA1EAD0014D05E /* Dado.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dado.swift; sourceTree = "<group>"; };
+		654EC49123DA1EAD0014D05E /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		654EC49823DA1F910014D05E /* D&D.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "D&D.xcdatamodel"; sourceTree = "<group>"; };
+		65887E6623D9BF1000FA6A16 /* ShowThingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowThingViewController.swift; sourceTree = "<group>"; };
+		65887E6823D9C9E200FA6A16 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
+		65887E6A23D9DCD800FA6A16 /* ChangeValueDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeValueDelegate.swift; sourceTree = "<group>"; };
+		65EA9C3223D757B300BEC6F0 /* ListaPersonagensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPersonagensViewController.swift; sourceTree = "<group>"; };
+		65EA9C3623D7586400BEC6F0 /* CriarPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarPersonagemViewController.swift; sourceTree = "<group>"; };
+		65EA9C3823D7588800BEC6F0 /* StatusPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPersonagemViewController.swift; sourceTree = "<group>"; };
+		65EA9C3E23D75A8E00BEC6F0 /* PersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagemViewController.swift; sourceTree = "<group>"; };
 		797F3B3723D4FE3500AF5FD7 /* D&D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D&D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		797F3B3A23D4FE3500AF5FD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		797F3B3C23D4FE3500AF5FD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +126,6 @@
 		797F3B5123D4FE3B00AF5FD7 /* D_DTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_DTests.swift; sourceTree = "<group>"; };
 		797F3B5323D4FE3B00AF5FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		797F3B5C23D4FE5A00AF5FD7 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		797F3B5E23D4FE6600AF5FD7 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,52 +146,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07AF23E923D9E8D2001C8563 /* Enums */ = {
+		6502CBFC23D7712900A18E9B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1943984023D9EAB600E54FE5 /* Alinhamento.swift */,
-				1943984223D9EB0D00E54FE5 /* Classe.swift */,
-				1943984423D9EB3C00E54FE5 /* Raca.swift */,
-				1943984623D9EB6A00E54FE5 /* Atributo.swift */,
-				1943984823D9EB8B00E54FE5 /* SubClasse.swift */,
-				1943984A23D9EBAD00E54FE5 /* Pericias.swift */,
-				1943984C23D9EBE100E54FE5 /* Resistencia.swift */,
-				1943984E23D9EBFA00E54FE5 /* Antecedente.swift */,
+				797F3B4323D4FE3B00AF5FD7 /* Assets.xcassets */,
+				797F3B4023D4FE3500AF5FD7 /* Main.storyboard */,
+				797F3B4523D4FE3B00AF5FD7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		654EC45A23DA1D890014D05E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				654EC45B23DA1DB80014D05E /* Alinhamento.swift */,
+				654EC45E23DA1DB80014D05E /* Antecedente.swift */,
+				654EC45C23DA1DB80014D05E /* Atributo.swift */,
+				654EC46223DA1DB90014D05E /* Classe.swift */,
+				654EC45F23DA1DB80014D05E /* Pericias.swift */,
+				654EC46123DA1DB80014D05E /* Raca.swift */,
+				654EC46023DA1DB80014D05E /* Resistencia.swift */,
+				654EC45D23DA1DB80014D05E /* SubClasse.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		07ECDB2923DA0AEB004744A9 /* APIModels */ = {
+		654EC46B23DA1E040014D05E /* APIModels */ = {
 			isa = PBXGroup;
 			children = (
-				797F3B5E23D4FE6600AF5FD7 /* Models.swift */,
-				195E13D123D627BC0070B5AB /* Class.swift */,
-				07AF23E623D8ECD0001C8563 /* MagiasModel.swift */,
-				195E13D323D628E40070B5AB /* Races.swift */,
-				195E13D523D629A30070B5AB /* Skills.swift */,
-				195E13D723D62A000070B5AB /* AbilityBonuses.swift */,
-				195E13D923D62AC00070B5AB /* StartingProficiencies.swift */,
-				195E13DB23D647F40070B5AB /* RootStruct.swift */,
-				195E13DD23D648C50070B5AB /* APIClasses.swift */,
-				19045EEE23D777890072E2B7 /* SpecificRace.swift */,
-				19045EF023D78CCE0072E2B7 /* SpecificEquipment.swift */,
-				19045EF223D7910F0072E2B7 /* SpecificSpell.swift */,
-				07AF23DE23D8A166001C8563 /* ClasseEspecifica.swift */,
-				07ECDB2A23DA0C75004744A9 /* EspacoMagia.swift */,
+				654EC47023DA1E360014D05E /* AbilityBonuses.swift */,
+				654EC47223DA1E360014D05E /* APIClasses.swift */,
+				654EC47823DA1E370014D05E /* Class.swift */,
+				654EC47523DA1E360014D05E /* ClasseEspecifica.swift */,
+				654EC47B23DA1E370014D05E /* EspacoMagia.swift */,
+				654EC47423DA1E360014D05E /* MagiasModel.swift */,
+				654EC46F23DA1E350014D05E /* Models.swift */,
+				654EC47923DA1E370014D05E /* Races.swift */,
+				654EC47623DA1E360014D05E /* RootStruct.swift */,
+				654EC47323DA1E360014D05E /* Skills.swift */,
+				654EC47123DA1E360014D05E /* SpecificEquipment.swift */,
+				654EC47723DA1E360014D05E /* SpecificRace.swift */,
+				654EC46E23DA1E350014D05E /* SpecificSpell.swift */,
+				654EC47A23DA1E370014D05E /* StartingProficiencies.swift */,
 			);
 			path = APIModels;
 			sourceTree = "<group>";
 		};
-		195E13CC23D623730070B5AB /* Models */ = {
+		654EC48A23DA1E550014D05E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				07033DFE23D9FAAE00A38CFF /* TestePericias.swift */,
-				07033DFC23D9F9B900A38CFF /* Resistencias.swift */,
-				07AF23DC23D889D8001C8563 /* Dado.swift */,
-				07AF23DA23D889D5001C8563 /* Personagem.swift */,
-				07033DFA23D9F86D00A38CFF /* Status.swift */,
+				654EC49023DA1EAD0014D05E /* Dado.swift */,
+				654EC48F23DA1EAD0014D05E /* Personagem.swift */,
+				654EC48E23DA1EAD0014D05E /* Resistencias.swift */,
+				654EC49123DA1EAD0014D05E /* Status.swift */,
+				654EC48D23DA1EAD0014D05E /* TestePericias.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		65EA9C3123D7578A00BEC6F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65EA9C3223D757B300BEC6F0 /* ListaPersonagensViewController.swift */,
+				65EA9C3623D7586400BEC6F0 /* CriarPersonagemViewController.swift */,
+				65EA9C3823D7588800BEC6F0 /* StatusPersonagemViewController.swift */,
+				65EA9C3E23D75A8E00BEC6F0 /* PersonagemViewController.swift */,
+				65465F6523D8D0A5008AC16C /* SelectAttributeViewController.swift */,
+				65465F6723D8ED1D008AC16C /* SelectStatusViewController.swift */,
+				65887E6623D9BF1000FA6A16 /* ShowThingViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		797F3B2E23D4FE3500AF5FD7 = {
@@ -185,18 +239,25 @@
 		797F3B3923D4FE3500AF5FD7 /* D&D */ = {
 			isa = PBXGroup;
 			children = (
-				07ECDB2923DA0AEB004744A9 /* APIModels */,
-				07AF23E923D9E8D2001C8563 /* Enums */,
-				195E13CC23D623730070B5AB /* Models */,
+				654EC48A23DA1E550014D05E /* Models */,
+				654EC46B23DA1E040014D05E /* APIModels */,
+				654EC45A23DA1D890014D05E /* Enums */,
+				65EA9C3123D7578A00BEC6F0 /* Controller */,
 				797F3B3A23D4FE3500AF5FD7 /* AppDelegate.swift */,
 				797F3B3C23D4FE3500AF5FD7 /* SceneDelegate.swift */,
 				797F3B3E23D4FE3500AF5FD7 /* ViewController.swift */,
-				797F3B4023D4FE3500AF5FD7 /* Main.storyboard */,
-				797F3B4323D4FE3B00AF5FD7 /* Assets.xcassets */,
-				797F3B4523D4FE3B00AF5FD7 /* LaunchScreen.storyboard */,
+				6502CBFA23D7712200A18E9B /* PersonagemTableViewCell.swift */,
+				6502CBFD23D77C2500A18E9B /* AtributoTableViewCell.swift */,
+				6522622323D881AD003B9BD7 /* PericiaTableViewCell.swift */,
+				6543261323D887E9009F2BF2 /* EquipamentoTableViewCell.swift */,
+				6543261523D889B5009F2BF2 /* MagiaTableViewCell.swift */,
+				6502CBFC23D7712900A18E9B /* View */,
 				797F3B4823D4FE3B00AF5FD7 /* Info.plist */,
 				797F3B5C23D4FE5A00AF5FD7 /* Service.swift */,
-				19AEA2BD23DA109500BD65A3 /* D&D.xcdatamodeld */,
+				65887E6823D9C9E200FA6A16 /* StatusTableViewCell.swift */,
+				65887E6A23D9DCD800FA6A16 /* ChangeValueDelegate.swift */,
+				654EC45823DA043B0014D05E /* MySearch.swift */,
+				654EC49723DA1F910014D05E /* D&D.xcdatamodeld */,
 			);
 			path = "D&D";
 			sourceTree = "<group>";
@@ -311,38 +372,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				195E13D823D62A000070B5AB /* AbilityBonuses.swift in Sources */,
-				19045EEF23D777890072E2B7 /* SpecificRace.swift in Sources */,
-				1943984F23D9EBFA00E54FE5 /* Antecedente.swift in Sources */,
-				07ECDB2B23DA0C75004744A9 /* EspacoMagia.swift in Sources */,
-				07033DFF23D9FAAE00A38CFF /* TestePericias.swift in Sources */,
-				07AF23DF23D8A166001C8563 /* ClasseEspecifica.swift in Sources */,
-				1943984323D9EB0D00E54FE5 /* Classe.swift in Sources */,
-				1943984523D9EB3C00E54FE5 /* Raca.swift in Sources */,
-				07033DFD23D9F9B900A38CFF /* Resistencias.swift in Sources */,
-				19045EF123D78CCE0072E2B7 /* SpecificEquipment.swift in Sources */,
-				1943984D23D9EBE100E54FE5 /* Resistencia.swift in Sources */,
-				07AF23DB23D889D5001C8563 /* Personagem.swift in Sources */,
-				195E13D423D628E40070B5AB /* Races.swift in Sources */,
-				195E13D623D629A30070B5AB /* Skills.swift in Sources */,
-				07033DFB23D9F86D00A38CFF /* Status.swift in Sources */,
-				195E13DE23D648C50070B5AB /* APIClasses.swift in Sources */,
-				195E13D223D627BC0070B5AB /* Class.swift in Sources */,
 				797F3B3F23D4FE3500AF5FD7 /* ViewController.swift in Sources */,
+				654EC49423DA1EAD0014D05E /* Personagem.swift in Sources */,
 				797F3B5D23D4FE5A00AF5FD7 /* Service.swift in Sources */,
+				654EC48423DA1E370014D05E /* RootStruct.swift in Sources */,
+				65EA9C3323D757B300BEC6F0 /* ListaPersonagensViewController.swift in Sources */,
+				654EC48123DA1E370014D05E /* Skills.swift in Sources */,
+				6543261423D887E9009F2BF2 /* EquipamentoTableViewCell.swift in Sources */,
+				65EA9C3923D7588800BEC6F0 /* StatusPersonagemViewController.swift in Sources */,
+				65465F6623D8D0A5008AC16C /* SelectAttributeViewController.swift in Sources */,
+				654EC49523DA1EAD0014D05E /* Dado.swift in Sources */,
+				654EC48923DA1E370014D05E /* EspacoMagia.swift in Sources */,
+				654EC47C23DA1E370014D05E /* SpecificSpell.swift in Sources */,
+				654EC48623DA1E370014D05E /* Class.swift in Sources */,
+				6502CBFB23D7712200A18E9B /* PersonagemTableViewCell.swift in Sources */,
+				654EC46323DA1DB90014D05E /* Alinhamento.swift in Sources */,
+				654EC48723DA1E370014D05E /* Races.swift in Sources */,
+				654EC49323DA1EAD0014D05E /* Resistencias.swift in Sources */,
+				654EC47D23DA1E370014D05E /* Models.swift in Sources */,
+				65EA9C3F23D75A8E00BEC6F0 /* PersonagemViewController.swift in Sources */,
+				654EC46723DA1DB90014D05E /* Pericias.swift in Sources */,
+				65887E6B23D9DCD800FA6A16 /* ChangeValueDelegate.swift in Sources */,
+				65465F6823D8ED1E008AC16C /* SelectStatusViewController.swift in Sources */,
+				654EC49923DA1F910014D05E /* D&D.xcdatamodeld in Sources */,
 				797F3B3B23D4FE3500AF5FD7 /* AppDelegate.swift in Sources */,
+				654EC48323DA1E370014D05E /* ClasseEspecifica.swift in Sources */,
+				654EC48523DA1E370014D05E /* SpecificRace.swift in Sources */,
+				654EC46623DA1DB90014D05E /* Antecedente.swift in Sources */,
+				654EC48223DA1E370014D05E /* MagiasModel.swift in Sources */,
+				654EC47F23DA1E370014D05E /* SpecificEquipment.swift in Sources */,
 				797F3B3D23D4FE3500AF5FD7 /* SceneDelegate.swift in Sources */,
-				1943984923D9EB8B00E54FE5 /* SubClasse.swift in Sources */,
-				19AEA2BF23DA109500BD65A3 /* D&D.xcdatamodeld in Sources */,
-				1943984723D9EB6A00E54FE5 /* Atributo.swift in Sources */,
-				195E13DC23D647F40070B5AB /* RootStruct.swift in Sources */,
-				1943984123D9EAB600E54FE5 /* Alinhamento.swift in Sources */,
-				1943984B23D9EBAD00E54FE5 /* Pericias.swift in Sources */,
-				797F3B5F23D4FE6600AF5FD7 /* Models.swift in Sources */,
-				195E13DA23D62AC10070B5AB /* StartingProficiencies.swift in Sources */,
-				19045EF323D7910F0072E2B7 /* SpecificSpell.swift in Sources */,
-				07AF23E723D8ECD0001C8563 /* MagiasModel.swift in Sources */,
-				07AF23DD23D889D8001C8563 /* Dado.swift in Sources */,
+				654EC49623DA1EAD0014D05E /* Status.swift in Sources */,
+				6502CBFE23D77C2500A18E9B /* AtributoTableViewCell.swift in Sources */,
+				654EC46823DA1DB90014D05E /* Resistencia.swift in Sources */,
+				654EC46523DA1DB90014D05E /* SubClasse.swift in Sources */,
+				654EC46A23DA1DB90014D05E /* Classe.swift in Sources */,
+				654EC47E23DA1E370014D05E /* AbilityBonuses.swift in Sources */,
+				654EC45923DA043B0014D05E /* MySearch.swift in Sources */,
+				65EA9C3723D7586400BEC6F0 /* CriarPersonagemViewController.swift in Sources */,
+				6522622423D881AD003B9BD7 /* PericiaTableViewCell.swift in Sources */,
+				654EC48023DA1E370014D05E /* APIClasses.swift in Sources */,
+				654EC46923DA1DB90014D05E /* Raca.swift in Sources */,
+				6543261623D889B5009F2BF2 /* MagiaTableViewCell.swift in Sources */,
+				654EC49223DA1EAD0014D05E /* TestePericias.swift in Sources */,
+				654EC48823DA1E370014D05E /* StartingProficiencies.swift in Sources */,
+				65887E6723D9BF1000FA6A16 /* ShowThingViewController.swift in Sources */,
+				65887E6923D9C9E200FA6A16 /* StatusTableViewCell.swift in Sources */,
+				654EC46423DA1DB90014D05E /* Atributo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +581,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6FYGZ29HL;
 				INFOPLIST_FILE = "D&D/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -523,6 +600,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6FYGZ29HL;
 				INFOPLIST_FILE = "D&D/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -611,12 +689,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		19AEA2BD23DA109500BD65A3 /* D&D.xcdatamodeld */ = {
+		654EC49723DA1F910014D05E /* D&D.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				19AEA2BE23DA109500BD65A3 /* D&D.xcdatamodel */,
+				654EC49823DA1F910014D05E /* D&D.xcdatamodel */,
 			);
-			currentVersion = 19AEA2BE23DA109500BD65A3 /* D&D.xcdatamodel */;
+			currentVersion = 654EC49823DA1F910014D05E /* D&D.xcdatamodel */;
 			path = "D&D.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -1,5 +1,16 @@
 import Foundation
 
-enum Classe: String, CodingKey{
-  case barbaro, bardo, bruxo, clerigo, druida, feiticeiro, guerreiro, ladino, mago ,monge, paladino, patrulheiro
+enum Classe: String {
+    case Barbaro = "Barbarian"
+    case Bardo = "Bard"
+    case Bruxo = "Warlock"
+    case Clerigo = "Cleric"
+    case Druida = "Druid"
+    case Feiticeiro = "Sorcerer"
+    case Guerreiro = "Fighter"
+    case Ladino = "Rogue"
+    case Mago = "Wizard"
+    case Monge = "Monk"
+    case Paladino = "Paladin"
+    case Patrulheiro = "Ranger"
 }

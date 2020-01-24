@@ -1,4 +1,14 @@
-enum Raca: String {
+//
+//  File.swift
+//  D&D
+//
+//  Created by Jonathan de Pinho Silva on 23/01/20.
+//  Copyright © 2020 Vinicius Mangueira. All rights reserved.
+//
+
+import Foundation
+
+enum RacaHH: String {
     case AnaoColina = "Anão Colina"
     case AnaoMontanha = "Anão Montanha"
     case ElfoAlto = "Elfo Alto"
