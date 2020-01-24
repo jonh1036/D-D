@@ -565,7 +565,7 @@
                     <navigationItem key="navigationItem" title="Criação" id="iK3-VR-88o">
                         <barButtonItem key="rightBarButtonItem" title="Seguinte" id="etY-GF-TG9">
                             <connections>
-                                <segue destination="tbN-f8-2qk" kind="show" id="iTb-1x-386"/>
+                                <action selector="savePersonagem" destination="IeF-yk-9GU" id="mPi-RI-2S6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -573,6 +573,7 @@
                         <outlet property="addImageButton" destination="jf2-KQ-2Ks" id="7ml-NF-oP6"/>
                         <outlet property="nameTextField" destination="ic2-GD-COW" id="x2D-OX-Lva"/>
                         <outlet property="tableVIew" destination="3M9-Jw-oME" id="SsW-po-z0K"/>
+                        <segue destination="tbN-f8-2qk" kind="show" identifier="status" id="Yoj-xV-I0t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTa-ka-Yf9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -643,20 +644,20 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StatusTableViewCell" id="bRS-Jx-Nh6" customClass="StatusTableViewCell" customModule="D_D" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="41"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="41.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bRS-Jx-Nh6" id="3Bx-8E-Frc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="41.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tr-0N-J4I">
-                                                    <rect key="frame" x="15" y="10" width="227" height="21"/>
+                                                    <rect key="frame" x="15" y="10" width="227" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Escolha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hat-km-XlC">
-                                                    <rect key="frame" x="252" y="12" width="108" height="17"/>
+                                                    <rect key="frame" x="252" y="12.5" width="108" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="108" id="JKB-dQ-IOk"/>
                                                     </constraints>

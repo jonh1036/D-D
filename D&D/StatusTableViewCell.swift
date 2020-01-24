@@ -17,6 +17,7 @@ class StatusTableViewCell: UITableViewCell, UIPickerViewDataSource, UIPickerView
     var attribute: Attribute!
     var pickerData: Array<String>!
     var currentValue: String!
+    let numbers = ["8", "10", "12", "13", "14", "15"]
     
     weak var changeValueDelegate: ChangeValueDelegate!
     
@@ -43,20 +44,11 @@ class StatusTableViewCell: UITableViewCell, UIPickerViewDataSource, UIPickerView
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if !string.contains( String(pickerData[row]) ){ //Verify if pickerData[row] -> String
-            currentValue = pickerData[row]
-            textField.text = currentValue
-        
-            attribute.currentValue = currentValue
-            changeValueDelegate.changeValue(for: attribute) 
-        }
-        else{
-            let alert = UIAlertView()
-            alert.title = "Valores repetidos"
-            alert.message = "Selecione valores diferente para continuar"
-            alert.addButtonWithTitle("Ok")
-            alert.show()
-        }
+        currentValue = pickerData[row]
+        textField.text = currentValue
+            
+        attribute.currentValue = currentValue
+        changeValueDelegate.changeValue(for: attribute)
     }
     
     

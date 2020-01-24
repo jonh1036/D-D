@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Personagem" representedClassName="Personagem" syncable="YES" codeGenerationType="class">
+    <entity name="PersonagemDataModel" representedClassName="PersonagemDataModel" syncable="YES" codeGenerationType="class">
         <attribute name="alinhamento" optional="YES" attributeType="String"/>
         <attribute name="antecedente" optional="YES" attributeType="String"/>
         <attribute name="carisma" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
@@ -18,11 +18,12 @@
         <attribute name="proeficiencia" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="raca" optional="YES" attributeType="String"/>
         <attribute name="resistencia" optional="YES" attributeType="Transformable"/>
+        <attribute name="sabedoria" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="speed" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="vida" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="xp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="Personagem" positionX="-63" positionY="-18" width="128" height="343"/>
+        <element name="PersonagemDataModel" positionX="-18" positionY="180" width="128" height="358"/>
     </elements>
 </model>

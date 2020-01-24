@@ -20,6 +20,16 @@ class ListaPersonagensViewController: UIViewController, UITableViewDelegate, UIT
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
+//        var char: PersonagemModel = PersonagemModel()
+//        char.nome = "Mary"
+//        let dataManager: DataManager = DataManager()
+//        dataManager.deleteAll()
+//        let isSaved = dataManager.savePersonagem(char)
+//        let result = dataManager.retrivePersonagem(nome: "Mary")
+//        let result = dataManager.retriveAllPersonagens()
+
+//        print(result?.value(forKey: "nome") as! String)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

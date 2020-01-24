@@ -23,12 +23,19 @@ class CriarPersonagemViewController: UIViewController {
     @IBOutlet weak var addImageButton: UIButton!
    
     var attributes = [Attribute]()
+    var personagem = PersonagemModel()
+    
+    var valoresVaziosAlert: UIAlertController!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableVIew.delegate = self
         self.tableVIew.dataSource = self
+        
+        self.valoresVaziosAlert = UIAlertController(title: "Valores", message: "Preencha todos os campos", preferredStyle: .alert)
+        
         
         attributes = [
            Attribute(name: "raça", values: Raca.all.map{value in value.rawValue}),
@@ -89,10 +96,19 @@ class CriarPersonagemViewController: UIViewController {
             let selectAttributeController = segue.destination as? SelectAttributeViewController else {
                 return
         }
+        
         let selectedAttribute = attributes[indePath.row]
         selectAttributeController.attribute = selectedAttribute
+        
+        
+    
+//MARK: - enviar personagem
+//        guard
+//            segue.identifier == "StatusSegue",
+//            let selectStatusController = segue.destination as? SelectStatusViewController else {
+//                return
+//        }
     }
-
 }
 
 extension CriarPersonagemViewController: UITableViewDelegate, UITableViewDataSource {
@@ -154,5 +170,33 @@ extension CriarPersonagemViewController {
             }
             
         }
+    }
+    
+    func isValoresVazios() -> Bool {
+        return false
+    }
+    @IBAction func savePersonagem() {
+        
+        if isValoresVazios() {
+            let actionAlert = UIAlertAction(title: "OK", style: .default, handler: nil)
+            valoresVaziosAlert.addAction(actionAlert)
+            
+            present(valoresVaziosAlert, animated: true, completion: nil)
+        } else {
+            self.performSegue(withIdentifier: "status", sender: nil)
+        }
+        
+        personagem.nome = nameTextField.text!
+        
+        personagem.classe = attributes[1].name
+        personagem.raca = attributes[0].name
+        personagem.antecedente = attributes[2].name
+        personagem.alinhamento = attributes[3].name
+        personagem.pericias = attributes[4].currentValues
+        personagem.equipamentos = attributes[5].currentValues
+        personagem.magias = attributes[6].currentValues
+        
+        
+        
     }
 }

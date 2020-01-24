@@ -46,6 +46,8 @@
 		65887E6723D9BF1000FA6A16 /* ShowThingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65887E6623D9BF1000FA6A16 /* ShowThingViewController.swift */; };
 		65887E6923D9C9E200FA6A16 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65887E6823D9C9E200FA6A16 /* StatusTableViewCell.swift */; };
 		65887E6B23D9DCD800FA6A16 /* ChangeValueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65887E6A23D9DCD800FA6A16 /* ChangeValueDelegate.swift */; };
+		65E871E623DB149500F8DCFB /* PersonagemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E871E523DB149500F8DCFB /* PersonagemModel.swift */; };
+		65E871E823DB17F900F8DCFB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E871E723DB17F900F8DCFB /* DataManager.swift */; };
 		65EA9C3323D757B300BEC6F0 /* ListaPersonagensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3223D757B300BEC6F0 /* ListaPersonagensViewController.swift */; };
 		65EA9C3723D7586400BEC6F0 /* CriarPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3623D7586400BEC6F0 /* CriarPersonagemViewController.swift */; };
 		65EA9C3923D7588800BEC6F0 /* StatusPersonagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9C3823D7588800BEC6F0 /* StatusPersonagemViewController.swift */; };
@@ -110,6 +112,8 @@
 		65887E6623D9BF1000FA6A16 /* ShowThingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowThingViewController.swift; sourceTree = "<group>"; };
 		65887E6823D9C9E200FA6A16 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
 		65887E6A23D9DCD800FA6A16 /* ChangeValueDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeValueDelegate.swift; sourceTree = "<group>"; };
+		65E871E523DB149500F8DCFB /* PersonagemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagemModel.swift; sourceTree = "<group>"; };
+		65E871E723DB17F900F8DCFB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		65EA9C3223D757B300BEC6F0 /* ListaPersonagensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPersonagensViewController.swift; sourceTree = "<group>"; };
 		65EA9C3623D7586400BEC6F0 /* CriarPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarPersonagemViewController.swift; sourceTree = "<group>"; };
 		65EA9C3823D7588800BEC6F0 /* StatusPersonagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPersonagemViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 				654EC48E23DA1EAD0014D05E /* Resistencias.swift */,
 				654EC49123DA1EAD0014D05E /* Status.swift */,
 				654EC48D23DA1EAD0014D05E /* TestePericias.swift */,
+				65E871E523DB149500F8DCFB /* PersonagemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				65887E6A23D9DCD800FA6A16 /* ChangeValueDelegate.swift */,
 				654EC45823DA043B0014D05E /* MySearch.swift */,
 				654EC49723DA1F910014D05E /* D&D.xcdatamodeld */,
+				65E871E723DB17F900F8DCFB /* DataManager.swift */,
 			);
 			path = "D&D";
 			sourceTree = "<group>";
@@ -406,6 +412,7 @@
 				6502CBFE23D77C2500A18E9B /* AtributoTableViewCell.swift in Sources */,
 				654EC46823DA1DB90014D05E /* Resistencia.swift in Sources */,
 				654EC46523DA1DB90014D05E /* SubClasse.swift in Sources */,
+				65E871E623DB149500F8DCFB /* PersonagemModel.swift in Sources */,
 				654EC46A23DA1DB90014D05E /* Classe.swift in Sources */,
 				654EC47E23DA1E370014D05E /* AbilityBonuses.swift in Sources */,
 				654EC45923DA043B0014D05E /* MySearch.swift in Sources */,
@@ -416,6 +423,7 @@
 				6543261623D889B5009F2BF2 /* MagiaTableViewCell.swift in Sources */,
 				654EC49223DA1EAD0014D05E /* TestePericias.swift in Sources */,
 				654EC48823DA1E370014D05E /* StartingProficiencies.swift in Sources */,
+				65E871E823DB17F900F8DCFB /* DataManager.swift in Sources */,
 				65887E6723D9BF1000FA6A16 /* ShowThingViewController.swift in Sources */,
 				65887E6923D9C9E200FA6A16 /* StatusTableViewCell.swift in Sources */,
 				654EC46423DA1DB90014D05E /* Atributo.swift in Sources */,
